@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05767A2DAAADE38F87D29B98 /* Pods_MyCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EDD27CA53D34142AABBF23 /* Pods_MyCloudMusic.framework */; };
+		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
+		06B87E8C2B6733FC00DC99F2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E8B2B6733FC00DC99F2 /* SceneDelegate.m */; };
+		06B87E8F2B6733FC00DC99F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E8E2B6733FC00DC99F2 /* ViewController.m */; };
+		06B87E922B6733FC00DC99F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E902B6733FC00DC99F2 /* Main.storyboard */; };
+		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
+		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
+		06B87E9A2B6733FE00DC99F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E992B6733FE00DC99F2 /* main.m */; };
+		06B87EA42B6733FF00DC99F2 /* MyCloudMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EA32B6733FF00DC99F2 /* MyCloudMusicTests.m */; };
+		06B87EAE2B6733FF00DC99F2 /* MyCloudMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EAD2B6733FF00DC99F2 /* MyCloudMusicUITests.m */; };
+		06B87EB02B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EAF2B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m */; };
+		72633165236A1A69E296D95D /* Pods_MyCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414DEFAD26962587D0F5D995 /* Pods_MyCloudMusicTests.framework */; };
+		7B3628B9885171913A0FC3F4 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52185501C691B4F60DEE3C8 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06B87EA02B6733FF00DC99F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B87E7C2B6733FC00DC99F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B87E832B6733FC00DC99F2;
+			remoteInfo = MyCloudMusic;
+		};
+		06B87EAA2B6733FF00DC99F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B87E7C2B6733FC00DC99F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B87E832B6733FC00DC99F2;
+			remoteInfo = MyCloudMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06B87E8A2B6733FC00DC99F2 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		06B87E8B2B6733FC00DC99F2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		06B87E8D2B6733FC00DC99F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		06B87E8E2B6733FC00DC99F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		06B87E912B6733FC00DC99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06B87E932B6733FE00DC99F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06B87E962B6733FE00DC99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06B87E982B6733FE00DC99F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B87E992B6733FE00DC99F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06B87E9F2B6733FF00DC99F2 /* MyCloudMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCloudMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B87EA32B6733FF00DC99F2 /* MyCloudMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCloudMusicTests.m; sourceTree = "<group>"; };
+		06B87EA92B6733FF00DC99F2 /* MyCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B87EAD2B6733FF00DC99F2 /* MyCloudMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCloudMusicUITests.m; sourceTree = "<group>"; };
+		06B87EAF2B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCloudMusicUITestsLaunchTests.m; sourceTree = "<group>"; };
+		37FA3A995BD880439AD90310 /* Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		414DEFAD26962587D0F5D995 /* Pods_MyCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A20818E9CA82BEACFEA1A4 /* Pods-MyCloudMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic.debug.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		94EDD27CA53D34142AABBF23 /* Pods_MyCloudMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		953C7D85752679BB2879E0FD /* Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4A32BFDD72BA0A560C9A873 /* Pods-MyCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-MyCloudMusicTests/Pods-MyCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0FF75DC5C3C3C4DE04D8394 /* Pods-MyCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusicTests/Pods-MyCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
+		D52185501C691B4F60DEE3C8 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCloudMusic_MyCloudMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BB36F5943F7D56BFEC3A08 /* Pods-MyCloudMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06B87E812B6733FC00DC99F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05767A2DAAADE38F87D29B98 /* Pods_MyCloudMusic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B87E9C2B6733FF00DC99F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72633165236A1A69E296D95D /* Pods_MyCloudMusicTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B87EA62B6733FF00DC99F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3628B9885171913A0FC3F4 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B87E7B2B6733FC00DC99F2 = {
+			isa = PBXGroup;
+			children = (
+				06B87E862B6733FC00DC99F2 /* MyCloudMusic */,
+				06B87EA22B6733FF00DC99F2 /* MyCloudMusicTests */,
+				06B87EAC2B6733FF00DC99F2 /* MyCloudMusicUITests */,
+				06B87E852B6733FC00DC99F2 /* Products */,
+				7D1550C3811E41B5E64EA68E /* Pods */,
+				3679F11DD2174A3309CEF3BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06B87E852B6733FC00DC99F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */,
+				06B87E9F2B6733FF00DC99F2 /* MyCloudMusicTests.xctest */,
+				06B87EA92B6733FF00DC99F2 /* MyCloudMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
+			isa = PBXGroup;
+			children = (
+				06B87E872B6733FC00DC99F2 /* AppDelegate.h */,
+				06B87E882B6733FC00DC99F2 /* AppDelegate.m */,
+				06B87E8A2B6733FC00DC99F2 /* SceneDelegate.h */,
+				06B87E8B2B6733FC00DC99F2 /* SceneDelegate.m */,
+				06B87E8D2B6733FC00DC99F2 /* ViewController.h */,
+				06B87E8E2B6733FC00DC99F2 /* ViewController.m */,
+				06B87E902B6733FC00DC99F2 /* Main.storyboard */,
+				06B87E932B6733FE00DC99F2 /* Assets.xcassets */,
+				06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */,
+				06B87E982B6733FE00DC99F2 /* Info.plist */,
+				06B87E992B6733FE00DC99F2 /* main.m */,
+			);
+			path = MyCloudMusic;
+			sourceTree = "<group>";
+		};
+		06B87EA22B6733FF00DC99F2 /* MyCloudMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				06B87EA32B6733FF00DC99F2 /* MyCloudMusicTests.m */,
+			);
+			path = MyCloudMusicTests;
+			sourceTree = "<group>";
+		};
+		06B87EAC2B6733FF00DC99F2 /* MyCloudMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06B87EAD2B6733FF00DC99F2 /* MyCloudMusicUITests.m */,
+				06B87EAF2B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m */,
+			);
+			path = MyCloudMusicUITests;
+			sourceTree = "<group>";
+		};
+		3679F11DD2174A3309CEF3BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94EDD27CA53D34142AABBF23 /* Pods_MyCloudMusic.framework */,
+				D52185501C691B4F60DEE3C8 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework */,
+				414DEFAD26962587D0F5D995 /* Pods_MyCloudMusicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D1550C3811E41B5E64EA68E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43A20818E9CA82BEACFEA1A4 /* Pods-MyCloudMusic.debug.xcconfig */,
+				F7BB36F5943F7D56BFEC3A08 /* Pods-MyCloudMusic.release.xcconfig */,
+				953C7D85752679BB2879E0FD /* Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig */,
+				37FA3A995BD880439AD90310 /* Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig */,
+				B4A32BFDD72BA0A560C9A873 /* Pods-MyCloudMusicTests.debug.xcconfig */,
+				C0FF75DC5C3C3C4DE04D8394 /* Pods-MyCloudMusicTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06B87E832B6733FC00DC99F2 /* MyCloudMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B87EB32B6733FF00DC99F2 /* Build configuration list for PBXNativeTarget "MyCloudMusic" */;
+			buildPhases = (
+				3275E47703BC1302D1260933 /* [CP] Check Pods Manifest.lock */,
+				06B87E802B6733FC00DC99F2 /* Sources */,
+				06B87E812B6733FC00DC99F2 /* Frameworks */,
+				06B87E822B6733FC00DC99F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCloudMusic;
+			productName = MyCloudMusic;
+			productReference = 06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06B87E9E2B6733FF00DC99F2 /* MyCloudMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B87EB62B6733FF00DC99F2 /* Build configuration list for PBXNativeTarget "MyCloudMusicTests" */;
+			buildPhases = (
+				746AECF02504350188E99C8F /* [CP] Check Pods Manifest.lock */,
+				06B87E9B2B6733FF00DC99F2 /* Sources */,
+				06B87E9C2B6733FF00DC99F2 /* Frameworks */,
+				06B87E9D2B6733FF00DC99F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06B87EA12B6733FF00DC99F2 /* PBXTargetDependency */,
+			);
+			name = MyCloudMusicTests;
+			productName = MyCloudMusicTests;
+			productReference = 06B87E9F2B6733FF00DC99F2 /* MyCloudMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06B87EA82B6733FF00DC99F2 /* MyCloudMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B87EB92B6733FF00DC99F2 /* Build configuration list for PBXNativeTarget "MyCloudMusicUITests" */;
+			buildPhases = (
+				FF23320C409F8DE177A9709C /* [CP] Check Pods Manifest.lock */,
+				06B87EA52B6733FF00DC99F2 /* Sources */,
+				06B87EA62B6733FF00DC99F2 /* Frameworks */,
+				06B87EA72B6733FF00DC99F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06B87EAB2B6733FF00DC99F2 /* PBXTargetDependency */,
+			);
+			name = MyCloudMusicUITests;
+			productName = MyCloudMusicUITests;
+			productReference = 06B87EA92B6733FF00DC99F2 /* MyCloudMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06B87E7C2B6733FC00DC99F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					06B87E832B6733FC00DC99F2 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					06B87E9E2B6733FF00DC99F2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 06B87E832B6733FC00DC99F2;
+					};
+					06B87EA82B6733FF00DC99F2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 06B87E832B6733FC00DC99F2;
+					};
+				};
+			};
+			buildConfigurationList = 06B87E7F2B6733FC00DC99F2 /* Build configuration list for PBXProject "MyCloudMusic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06B87E7B2B6733FC00DC99F2;
+			productRefGroup = 06B87E852B6733FC00DC99F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06B87E832B6733FC00DC99F2 /* MyCloudMusic */,
+				06B87E9E2B6733FF00DC99F2 /* MyCloudMusicTests */,
+				06B87EA82B6733FF00DC99F2 /* MyCloudMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06B87E822B6733FC00DC99F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */,
+				06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */,
+				06B87E922B6733FC00DC99F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B87E9D2B6733FF00DC99F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B87EA72B6733FF00DC99F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3275E47703BC1302D1260933 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCloudMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		746AECF02504350188E99C8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCloudMusicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF23320C409F8DE177A9709C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCloudMusic-MyCloudMusicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06B87E802B6733FC00DC99F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B87E8F2B6733FC00DC99F2 /* ViewController.m in Sources */,
+				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
+				06B87E9A2B6733FE00DC99F2 /* main.m in Sources */,
+				06B87E8C2B6733FC00DC99F2 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B87E9B2B6733FF00DC99F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B87EA42B6733FF00DC99F2 /* MyCloudMusicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B87EA52B6733FF00DC99F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B87EB02B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m in Sources */,
+				06B87EAE2B6733FF00DC99F2 /* MyCloudMusicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06B87EA12B6733FF00DC99F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B87E832B6733FC00DC99F2 /* MyCloudMusic */;
+			targetProxy = 06B87EA02B6733FF00DC99F2 /* PBXContainerItemProxy */;
+		};
+		06B87EAB2B6733FF00DC99F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B87E832B6733FC00DC99F2 /* MyCloudMusic */;
+			targetProxy = 06B87EAA2B6733FF00DC99F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06B87E902B6733FC00DC99F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06B87E912B6733FC00DC99F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06B87E962B6733FE00DC99F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06B87EB12B6733FF00DC99F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06B87EB22B6733FF00DC99F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06B87EB42B6733FF00DC99F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A20818E9CA82BEACFEA1A4 /* Pods-MyCloudMusic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RVB483PRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCloudMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zyh.MyCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06B87EB52B6733FF00DC99F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BB36F5943F7D56BFEC3A08 /* Pods-MyCloudMusic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RVB483PRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCloudMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zyh.MyCloudMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06B87EB72B6733FF00DC99F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4A32BFDD72BA0A560C9A873 /* Pods-MyCloudMusicTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RVB483PRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zyh.MyCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCloudMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyCloudMusic";
+			};
+			name = Debug;
+		};
+		06B87EB82B6733FF00DC99F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FF75DC5C3C3C4DE04D8394 /* Pods-MyCloudMusicTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RVB483PRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zyh.MyCloudMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCloudMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyCloudMusic";
+			};
+			name = Release;
+		};
+		06B87EBA2B6733FF00DC99F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 953C7D85752679BB2879E0FD /* Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RVB483PRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zyh.MyCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCloudMusic;
+			};
+			name = Debug;
+		};
+		06B87EBB2B6733FF00DC99F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37FA3A995BD880439AD90310 /* Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RVB483PRN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zyh.MyCloudMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCloudMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06B87E7F2B6733FC00DC99F2 /* Build configuration list for PBXProject "MyCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B87EB12B6733FF00DC99F2 /* Debug */,
+				06B87EB22B6733FF00DC99F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B87EB32B6733FF00DC99F2 /* Build configuration list for PBXNativeTarget "MyCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B87EB42B6733FF00DC99F2 /* Debug */,
+				06B87EB52B6733FF00DC99F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B87EB62B6733FF00DC99F2 /* Build configuration list for PBXNativeTarget "MyCloudMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B87EB72B6733FF00DC99F2 /* Debug */,
+				06B87EB82B6733FF00DC99F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B87EB92B6733FF00DC99F2 /* Build configuration list for PBXNativeTarget "MyCloudMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B87EBA2B6733FF00DC99F2 /* Debug */,
+				06B87EBB2B6733FF00DC99F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06B87E7C2B6733FC00DC99F2 /* Project object */;
+}
