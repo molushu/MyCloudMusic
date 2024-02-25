@@ -1,24 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ul9-9N-lHi" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Yio-5c-jIz">
+                                        <rect key="frame" x="159" y="123" width="75" height="309"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="Zue-bY-0f9"/>
+                                            <constraint firstAttribute="height" constant="309" id="hUR-yG-AAa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2la-Pj-cRl">
+                                        <rect key="frame" x="102.66666666666669" y="732.66666666666663" width="188" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="QPO-GA-sWm"/>
+                                            <constraint firstAttribute="width" constant="188" id="cqU-FJ-z4f"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2022 Ixuea. All Rights Reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-IR-VZJ">
+                                        <rect key="frame" x="70.666666666666686" y="783.66666666666663" width="252" height="14.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JS1-IR-VZJ" firstAttribute="centerX" secondItem="Ul9-9N-lHi" secondAttribute="centerX" id="CfV-XL-DOA"/>
+                                    <constraint firstAttribute="bottom" secondItem="JS1-IR-VZJ" secondAttribute="bottom" constant="20" id="OD4-0W-Mhg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yio-5c-jIz" secondAttribute="bottom" constant="386" id="XwU-sQ-Hy8"/>
+                                    <constraint firstItem="JS1-IR-VZJ" firstAttribute="top" secondItem="2la-Pj-cRl" secondAttribute="bottom" constant="20" id="YWC-9F-rSK"/>
+                                    <constraint firstItem="2la-Pj-cRl" firstAttribute="centerX" secondItem="Ul9-9N-lHi" secondAttribute="centerX" id="pEd-nC-Lzq"/>
+                                    <constraint firstItem="Yio-5c-jIz" firstAttribute="centerX" secondItem="Ul9-9N-lHi" secondAttribute="centerX" id="zQA-iM-X4d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ul9-9N-lHi" secondAttribute="bottom" id="WWm-Yc-eH3"/>
+                            <constraint firstItem="Ul9-9N-lHi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XHc-f8-qXN"/>
+                            <constraint firstItem="Ul9-9N-lHi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="azL-rI-1gC"/>
+                            <constraint firstItem="Ul9-9N-lHi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="stH-bA-SLF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-160" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SplashBanner" width="74.666664123535156" height="309"/>
+        <image name="SplashLogo" width="188" height="31.666666030883789"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
