@@ -75,10 +75,29 @@
                         <viewLayoutGuide key="safeArea" id="4jM-R1-PSi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KeN-Cl-gK7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0A-vt-7Is" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="4"/>
+            <point key="canvasLocation" x="1454.1984732824426" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Yi-2d-DDb">
+            <objects>
+                <navigationController storyboardIdentifier="LoginHomeNav" automaticallyAdjustsScrollViewInsets="NO" id="PbX-na-vkS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OaX-5c-ycb">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Nu-oa-FoB" kind="relationship" relationship="rootViewController" id="3Xo-dp-gDw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acj-AV-fFO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527.48091603053433" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
