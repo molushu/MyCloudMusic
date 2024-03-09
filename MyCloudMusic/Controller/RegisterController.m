@@ -1,23 +1,27 @@
 //
-//  LoginController.m
+//  RegisterController.m
 //  MyCloudMusic
 //
-//  Created by zyh on 2024/3/8.
+//  Created by zyh on 2024/3/9.
 //
 
-#import "LoginController.h"
 #import "RegisterController.h"
 
-@interface LoginController ()
+@interface RegisterController ()
 
 @property(nonatomic, strong) UIButton *otherButton;
 
 @end
 
-@implementation LoginController
+@implementation RegisterController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 使用完全纯代码后，要设置背景，目前默认是黑色
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.navigationItem.title = @"注册界面";
+    
     // 纯代码方式添加一个按钮，其他控件也类似
     self.otherButton = [UIButton buttonWithType:UIButtonTypeSystem];
     
@@ -49,13 +53,6 @@
 
 - (void)otherClick:(UIButton *)sender {
     NSLog(@"LoginController otherClick");
-    
-    RegisterController *target = [RegisterController new];
-    
-    // 传递参数
-    target.nickname = @"爱学呀";
-    
-    [self.navigationController pushViewController:target animated:YES];
 }
 
 @end

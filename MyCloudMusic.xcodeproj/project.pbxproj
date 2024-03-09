@@ -11,6 +11,7 @@
 		066702A62B8EC4300057071C /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702A52B8EC4300057071C /* SplashController.m */; };
 		066702A92B8F7A040057071C /* LoginHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702A82B8F7A040057071C /* LoginHomeController.m */; };
 		066702AC2B9B54C80057071C /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702AB2B9B54C80057071C /* LoginController.m */; };
+		066702AF2B9C80EE0057071C /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702AE2B9C80EE0057071C /* RegisterController.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E8C2B6733FC00DC99F2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E8B2B6733FC00DC99F2 /* SceneDelegate.m */; };
 		06B87E922B6733FC00DC99F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E902B6733FC00DC99F2 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		066702A82B8F7A040057071C /* LoginHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHomeController.m; sourceTree = "<group>"; };
 		066702AA2B9B54C80057071C /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		066702AB2B9B54C80057071C /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		066702AD2B9C80EE0057071C /* RegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		066702AE2B9C80EE0057071C /* RegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				066702A82B8F7A040057071C /* LoginHomeController.m */,
 				066702AA2B9B54C80057071C /* LoginController.h */,
 				066702AB2B9B54C80057071C /* LoginController.m */,
+				066702AD2B9C80EE0057071C /* RegisterController.h */,
+				066702AE2B9C80EE0057071C /* RegisterController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				066702A92B8F7A040057071C /* LoginHomeController.m in Sources */,
 				066702A62B8EC4300057071C /* SplashController.m in Sources */,
 				06B87E9A2B6733FE00DC99F2 /* main.m in Sources */,
+				066702AF2B9C80EE0057071C /* RegisterController.m in Sources */,
 				06B87E8C2B6733FC00DC99F2 /* SceneDelegate.m in Sources */,
 				066702AC2B9B54C80057071C /* LoginController.m in Sources */,
 			);
