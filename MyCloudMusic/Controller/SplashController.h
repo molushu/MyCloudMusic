@@ -1,6 +1,6 @@
 //
 //  SplashController.h
-//  MyCloudMusic
+//  启动界面
 //
 //  Created by zyh on 2024/2/28.
 //
