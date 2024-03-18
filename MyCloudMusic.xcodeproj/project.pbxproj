@@ -8,12 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		05767A2DAAADE38F87D29B98 /* Pods_MyCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EDD27CA53D34142AABBF23 /* Pods_MyCloudMusic.framework */; };
-		066702A62B8EC4300057071C /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702A52B8EC4300057071C /* SplashController.m */; };
-		066702A92B8F7A040057071C /* LoginHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702A82B8F7A040057071C /* LoginHomeController.m */; };
-		066702AC2B9B54C80057071C /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702AB2B9B54C80057071C /* LoginController.m */; };
-		066702AF2B9C80EE0057071C /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066702AE2B9C80EE0057071C /* RegisterController.m */; };
+		066703D22BA7E4AD0057071C /* SplashController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703D12BA7E4AD0057071C /* SplashController.m */; };
+		066703D82BA885270057071C /* SuperDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703D72BA885270057071C /* SuperDateUtil.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
-		06B87E922B6733FC00DC99F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E902B6733FC00DC99F2 /* Main.storyboard */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
 		06B87E9A2B6733FE00DC99F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E992B6733FE00DC99F2 /* main.m */; };
@@ -42,18 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		066702A42B8EC4300057071C /* SplashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashController.h; sourceTree = "<group>"; };
-		066702A52B8EC4300057071C /* SplashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashController.m; sourceTree = "<group>"; };
-		066702A72B8F7A040057071C /* LoginHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginHomeController.h; sourceTree = "<group>"; };
-		066702A82B8F7A040057071C /* LoginHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginHomeController.m; sourceTree = "<group>"; };
-		066702AA2B9B54C80057071C /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		066702AB2B9B54C80057071C /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
-		066702AD2B9C80EE0057071C /* RegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
-		066702AE2B9C80EE0057071C /* RegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		066703D02BA7E4AD0057071C /* SplashController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashController.h; sourceTree = "<group>"; };
+		066703D12BA7E4AD0057071C /* SplashController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashController.m; sourceTree = "<group>"; };
+		066703D62BA885270057071C /* SuperDateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperDateUtil.h; sourceTree = "<group>"; };
+		066703D72BA885270057071C /* SuperDateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperDateUtil.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		06B87E912B6733FC00DC99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06B87E932B6733FE00DC99F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06B87E962B6733FE00DC99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06B87E982B6733FE00DC99F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,19 +94,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		066702A32B8EC3390057071C /* Controller */ = {
+		066703CD2BA7E4600057071C /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				066702A42B8EC4300057071C /* SplashController.h */,
-				066702A52B8EC4300057071C /* SplashController.m */,
-				066702A72B8F7A040057071C /* LoginHomeController.h */,
-				066702A82B8F7A040057071C /* LoginHomeController.m */,
-				066702AA2B9B54C80057071C /* LoginController.h */,
-				066702AB2B9B54C80057071C /* LoginController.m */,
-				066702AD2B9C80EE0057071C /* RegisterController.h */,
-				066702AE2B9C80EE0057071C /* RegisterController.m */,
+				066703CE2BA7E46E0057071C /* Splash */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		066703CE2BA7E46E0057071C /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				066703CF2BA7E4920057071C /* Controller */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		066703CF2BA7E4920057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				066703D02BA7E4AD0057071C /* SplashController.h */,
+				066703D12BA7E4AD0057071C /* SplashController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		066703D32BA884F30057071C /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				066703D42BA884FB0057071C /* SuperUI */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		066703D42BA884FB0057071C /* SuperUI */ = {
+			isa = PBXGroup;
+			children = (
+				066703D52BA885060057071C /* Date */,
+			);
+			path = SuperUI;
+			sourceTree = "<group>";
+		};
+		066703D52BA885060057071C /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				066703D62BA885270057071C /* SuperDateUtil.h */,
+				066703D72BA885270057071C /* SuperDateUtil.m */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 		06B87E7B2B6733FC00DC99F2 = {
@@ -142,10 +169,10 @@
 		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
-				066702A32B8EC3390057071C /* Controller */,
+				066703D32BA884F30057071C /* Vender */,
+				066703CD2BA7E4600057071C /* Component */,
 				06B87E872B6733FC00DC99F2 /* AppDelegate.h */,
 				06B87E882B6733FC00DC99F2 /* AppDelegate.m */,
-				06B87E902B6733FC00DC99F2 /* Main.storyboard */,
 				06B87E932B6733FE00DC99F2 /* Assets.xcassets */,
 				06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */,
 				06B87E982B6733FE00DC99F2 /* Info.plist */,
@@ -205,6 +232,7 @@
 				06B87E802B6733FC00DC99F2 /* Sources */,
 				06B87E812B6733FC00DC99F2 /* Frameworks */,
 				06B87E822B6733FC00DC99F2 /* Resources */,
+				9AA212906171B5E95B2DAF23 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +270,7 @@
 				06B87EA52B6733FF00DC99F2 /* Sources */,
 				06B87EA62B6733FF00DC99F2 /* Frameworks */,
 				06B87EA72B6733FF00DC99F2 /* Resources */,
+				A2531E557D1B2872E0B37838 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,7 +331,6 @@
 			files = (
 				06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */,
 				06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */,
-				06B87E922B6733FC00DC99F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +395,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9AA212906171B5E95B2DAF23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2531E557D1B2872E0B37838 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FF23320C409F8DE177A9709C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,12 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066703D22BA7E4AD0057071C /* SplashController.m in Sources */,
+				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
-				066702A92B8F7A040057071C /* LoginHomeController.m in Sources */,
-				066702A62B8EC4300057071C /* SplashController.m in Sources */,
 				06B87E9A2B6733FE00DC99F2 /* main.m in Sources */,
-				066702AF2B9C80EE0057071C /* RegisterController.m in Sources */,
-				066702AC2B9B54C80057071C /* LoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,14 +498,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		06B87E902B6733FC00DC99F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06B87E912B6733FC00DC99F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -582,11 +634,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RVB483PRN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCloudMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,11 +662,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RVB483PRN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCloudMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
