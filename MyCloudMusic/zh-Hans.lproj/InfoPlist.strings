@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  MyCloudMusic
+
+  Created by zyh on 2024/3/19.
+  
+*/
+CFBundleName = "我的云音乐";

@@ -50,7 +50,10 @@
     agrementView.myCenterX = 0;
     agrementView.font = [UIFont systemFontOfSize:12];
     agrementView.textColor = [UIColor grayColor];
-    agrementView.text = [NSString stringWithFormat:@"Copyright @%ld ZM. All Rights Reserved", year];
+    
+    NSString *result = NSLocalizedString(@"Copyright", @"");
+    result = [NSString stringWithFormat:result, year];
+    agrementView.text = result;
     [container addSubview:agrementView];
     
     // logo
