@@ -9,6 +9,7 @@
 #import <MyLayout/MyLayout.h>
 #import "SplashController.h"
 #import "SuperDateUtil.h"
+#import "R.h"
 
 @interface SplashController ()
 
@@ -51,9 +52,12 @@
     agrementView.font = [UIFont systemFontOfSize:12];
     agrementView.textColor = [UIColor grayColor];
     
-    NSString *result = NSLocalizedString(@"Copyright", @"");
-    result = [NSString stringWithFormat:result, year];
-    agrementView.text = result;
+//    NSString *result = NSLocalizedString(@"Copyright", @"");
+//    result = [NSString stringWithFormat:result, year];
+//    agrementView.text = result;
+    
+    // 使用R.objc框架
+    agrementView.text = [R.string.localizable copyright:year];
     [container addSubview:agrementView];
     
     // logo

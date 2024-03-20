@@ -10,6 +10,8 @@ target 'MyCloudMusic' do
   pod "QMUIKit"
   # 提供类似Android中更高层级的布局框架
   pod 'MyLayout'
+  # 作者说受R.swift的自由启发，获取自动完成的本地化字符串、资产目录图像名称和故事板对象
+  pod 'R.objc'
 
   target 'MyCloudMusicTests' do
     inherit! :search_paths

@@ -12,6 +12,7 @@
 		066703D82BA885270057071C /* SuperDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703D72BA885270057071C /* SuperDateUtil.m */; };
 		066703DB2BA9D9CD0057071C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066703DD2BA9D9CD0057071C /* Localizable.strings */; };
 		066703E22BA9E3FD0057071C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066703E42BA9E3FD0057071C /* InfoPlist.strings */; };
+		066703E92BAB17A10057071C /* R.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703E82BAB17A10057071C /* R.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -50,6 +51,8 @@
 		066703DF2BA9DA1C0057071C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		066703E32BA9E3FD0057071C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		066703E52BA9E41D0057071C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		066703E72BAB17A10057071C /* R.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = R.h; sourceTree = SOURCE_ROOT; };
+		066703E82BAB17A10057071C /* R.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = R.m; sourceTree = SOURCE_ROOT; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */,
 				06B87E982B6733FE00DC99F2 /* Info.plist */,
 				06B87E992B6733FE00DC99F2 /* main.m */,
+				066703E72BAB17A10057071C /* R.h */,
+				066703E82BAB17A10057071C /* R.m */,
 				066703DD2BA9D9CD0057071C /* Localizable.strings */,
 				066703E42BA9E3FD0057071C /* InfoPlist.strings */,
 			);
@@ -238,6 +243,7 @@
 			buildConfigurationList = 06B87EB32B6733FF00DC99F2 /* Build configuration list for PBXNativeTarget "MyCloudMusic" */;
 			buildPhases = (
 				3275E47703BC1302D1260933 /* [CP] Check Pods Manifest.lock */,
+				066703E62BAB168E0057071C /* ShellScript */,
 				06B87E802B6733FC00DC99F2 /* Sources */,
 				06B87E812B6733FC00DC99F2 /* Frameworks */,
 				06B87E822B6733FC00DC99F2 /* Resources */,
@@ -363,6 +369,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		066703E62BAB168E0057071C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/R.objc/Robjc\" -p \"$SRCROOT\" --skip-themes\n";
+		};
 		3275E47703BC1302D1260933 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +495,7 @@
 			files = (
 				066703D22BA7E4AD0057071C /* SplashController.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
+				066703E92BAB17A10057071C /* R.m in Sources */,
 				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
 				06B87E9A2B6733FE00DC99F2 /* main.m in Sources */,
 			);
