@@ -10,6 +10,8 @@
 #import "SplashController.h"
 #import "SuperDateUtil.h"
 #import "R.h"
+#import "UIColor+Config.h"
+#import "UIColor+Theme.h"
 
 @interface SplashController ()
 
@@ -19,7 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    // 默认颜色，如果某些界面不一样，再单独设置
+    self.view.backgroundColor = [UIColor colorBackground];
     
     // 根容器
     MyRelativeLayout *container = [MyRelativeLayout new];
@@ -50,7 +53,7 @@
     agrementView.myBottom = 20;
     agrementView.myCenterX = 0;
     agrementView.font = [UIFont systemFontOfSize:12];
-    agrementView.textColor = [UIColor grayColor];
+    agrementView.textColor = [UIColor black80];
     
 //    NSString *result = NSLocalizedString(@"Copyright", @"");
 //    result = [NSString stringWithFormat:result, year];
