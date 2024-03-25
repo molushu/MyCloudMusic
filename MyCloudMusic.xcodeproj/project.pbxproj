@@ -17,6 +17,9 @@
 		066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703F42BAC6F0E0057071C /* UIColor+Config.m */; };
 		066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703F72BAC84EA0057071C /* UIColor+Theme.m */; };
 		066703FB2BAC86D10057071C /* UIColor+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703FA2BAC86D10057071C /* UIColor+SuperUI.m */; };
+		066703FF2BAFD3790057071C /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703FE2BAFD3790057071C /* BaseController.m */; };
+		066704022BAFD4C80057071C /* BaseCommonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704012BAFD4C80057071C /* BaseCommonController.m */; };
+		066704052BAFD5A60057071C /* BaseLogicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704042BAFD5A60057071C /* BaseLogicController.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -65,6 +68,12 @@
 		066703F72BAC84EA0057071C /* UIColor+Theme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Theme.m"; sourceTree = "<group>"; };
 		066703F92BAC86D10057071C /* UIColor+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SuperUI.h"; sourceTree = "<group>"; };
 		066703FA2BAC86D10057071C /* UIColor+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SuperUI.m"; sourceTree = "<group>"; };
+		066703FD2BAFD3790057071C /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		066703FE2BAFD3790057071C /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		066704002BAFD4C80057071C /* BaseCommonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCommonController.h; sourceTree = "<group>"; };
+		066704012BAFD4C80057071C /* BaseCommonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCommonController.m; sourceTree = "<group>"; };
+		066704032BAFD5A60057071C /* BaseLogicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLogicController.h; sourceTree = "<group>"; };
+		066704042BAFD5A60057071C /* BaseLogicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLogicController.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -189,6 +198,19 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		066703FC2BAFD32D0057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				066703FD2BAFD3790057071C /* BaseController.h */,
+				066703FE2BAFD3790057071C /* BaseController.m */,
+				066704002BAFD4C80057071C /* BaseCommonController.h */,
+				066704012BAFD4C80057071C /* BaseCommonController.m */,
+				066704032BAFD5A60057071C /* BaseLogicController.h */,
+				066704042BAFD5A60057071C /* BaseLogicController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		06B87E7B2B6733FC00DC99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +236,7 @@
 		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				066703FC2BAFD32D0057071C /* Controller */,
 				066703F22BAC6EE50057071C /* Config */,
 				066703D32BA884F30057071C /* Vender */,
 				066703CD2BA7E4600057071C /* Component */,
@@ -530,11 +553,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				066703D22BA7E4AD0057071C /* SplashController.m in Sources */,
+				066704052BAFD5A60057071C /* BaseLogicController.m in Sources */,
 				066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */,
 				066703FB2BAC86D10057071C /* UIColor+SuperUI.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				066703E92BAB17A10057071C /* R.m in Sources */,
+				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
+				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,
 				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
 				06B87E9A2B6733FE00DC99F2 /* main.m in Sources */,

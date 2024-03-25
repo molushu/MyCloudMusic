@@ -19,21 +19,13 @@
 
 @implementation SplashController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)initViews {
+    [super initViews];
+    
     // 默认颜色，如果某些界面不一样，再单独设置
-    self.view.backgroundColor = [UIColor colorBackground];
+    [self setBackgroundColor:[UIColor colorBackground]];
     
-    // 根容器
-    MyRelativeLayout *container = [MyRelativeLayout new];
-    
-    // 从安全区开始
-    container.leadingPos.equalTo(@(MyLayoutPos.safeAreaMargin));
-    container.trailingPos.equalTo(@(MyLayoutPos.safeAreaMargin));
-    container.topPos.equalTo(@(MyLayoutPos.safeAreaMargin));
-    container.bottomPos.equalTo(@(MyLayoutPos.safeAreaMargin));
-    
-    [self.view addSubview:container];
+    [self initRelativeLayoutSafeArea];
     
     // banner
     UIImageView *bannerView = [UIImageView new];
@@ -42,7 +34,7 @@
     bannerView.myTop= 120;
     bannerView.myCenterX = 0;
     bannerView.image = [UIImage imageNamed:@"SplashBanner"];
-    [container addSubview:bannerView];
+    [self.container addSubview:bannerView];
     
     // 版权
     NSInteger year = [SuperDateUtil currentYear];
@@ -61,7 +53,7 @@
     
     // 使用R.objc框架
     agrementView.text = [R.string.localizable copyright:year];
-    [container addSubview:agrementView];
+    [self.container addSubview:agrementView];
     
     // logo
     UIImageView *logoView = [UIImageView new];
@@ -71,7 +63,12 @@
     logoView.myCenterX = 0;
     logoView.image = [UIImage imageNamed:@"SplashLogo"];
     logoView.contentMode = UIViewContentModeScaleAspectFit;
-    [container addSubview:logoView];
+    [self.container addSubview:logoView];
+}
+
+- (void)initDatum {
+    [super initDatum];
+    
 }
 
 @end
