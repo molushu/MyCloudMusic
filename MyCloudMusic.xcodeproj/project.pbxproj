@@ -20,6 +20,8 @@
 		066703FF2BAFD3790057071C /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066703FE2BAFD3790057071C /* BaseController.m */; };
 		066704022BAFD4C80057071C /* BaseCommonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704012BAFD4C80057071C /* BaseCommonController.m */; };
 		066704052BAFD5A60057071C /* BaseLogicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704042BAFD5A60057071C /* BaseLogicController.m */; };
+		066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704072BB1B54E0057071C /* TermServiceDialogController.m */; };
+		0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667040B2BB1C9680057071C /* ViewFactoryUtil.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -74,6 +76,11 @@
 		066704012BAFD4C80057071C /* BaseCommonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCommonController.m; sourceTree = "<group>"; };
 		066704032BAFD5A60057071C /* BaseLogicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLogicController.h; sourceTree = "<group>"; };
 		066704042BAFD5A60057071C /* BaseLogicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLogicController.m; sourceTree = "<group>"; };
+		066704062BB1B54E0057071C /* TermServiceDialogController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TermServiceDialogController.h; sourceTree = "<group>"; };
+		066704072BB1B54E0057071C /* TermServiceDialogController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TermServiceDialogController.m; sourceTree = "<group>"; };
+		0667040A2BB1C9680057071C /* ViewFactoryUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewFactoryUtil.h; sourceTree = "<group>"; };
+		0667040B2BB1C9680057071C /* ViewFactoryUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewFactoryUtil.m; sourceTree = "<group>"; };
+		0667040D2BB2DBAE0057071C /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +153,8 @@
 			children = (
 				066703D02BA7E4AD0057071C /* SplashController.h */,
 				066703D12BA7E4AD0057071C /* SplashController.m */,
+				066704062BB1B54E0057071C /* TermServiceDialogController.h */,
+				066704072BB1B54E0057071C /* TermServiceDialogController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +220,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		066704092BB1C9350057071C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0667040A2BB1C9680057071C /* ViewFactoryUtil.h */,
+				0667040B2BB1C9680057071C /* ViewFactoryUtil.m */,
+				0667040D2BB2DBAE0057071C /* Constant.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		06B87E7B2B6733FC00DC99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +255,7 @@
 		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				066704092BB1C9350057071C /* Util */,
 				066703FC2BAFD32D0057071C /* Controller */,
 				066703F22BAC6EE50057071C /* Config */,
 				066703D32BA884F30057071C /* Vender */,
@@ -553,12 +573,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				066703D22BA7E4AD0057071C /* SplashController.m in Sources */,
+				0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */,
 				066704052BAFD5A60057071C /* BaseLogicController.m in Sources */,
 				066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */,
 				066703FB2BAC86D10057071C /* UIColor+SuperUI.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				066703E92BAB17A10057071C /* R.m in Sources */,
 				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
+				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
 				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,
