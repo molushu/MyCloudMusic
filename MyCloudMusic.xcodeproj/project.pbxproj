@@ -84,6 +84,7 @@
 		0667040D2BB2DBAE0057071C /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		0667040E2BB3E5730057071C /* DefaultPreferenceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPreferenceUtil.h; sourceTree = "<group>"; };
 		0667040F2BB3E5730057071C /* DefaultPreferenceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPreferenceUtil.m; sourceTree = "<group>"; };
+		066704112BB468070057071C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -275,6 +276,7 @@
 				066703E82BAB17A10057071C /* R.m */,
 				066703DD2BA9D9CD0057071C /* Localizable.strings */,
 				066703E42BA9E3FD0057071C /* InfoPlist.strings */,
+				066704112BB468070057071C /* PrefixHeader.pch */,
 			);
 			path = MyCloudMusic;
 			sourceTree = "<group>";
@@ -786,6 +788,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RVB483PRN;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyCloudMusic/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCloudMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -814,6 +818,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4RVB483PRN;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MyCloudMusic/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCloudMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

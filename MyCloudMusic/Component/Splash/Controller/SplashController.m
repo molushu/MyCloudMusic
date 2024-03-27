@@ -9,11 +9,11 @@
 #import <MyLayout/MyLayout.h>
 #import "SplashController.h"
 #import "SuperDateUtil.h"
-#import "R.h"
-#import "UIColor+Config.h"
-#import "UIColor+Theme.h"
+//#import "R.h"
+//#import "UIColor+Config.h"
+//#import "UIColor+Theme.h"
 #import "TermServiceDialogController.h"
-#import "DefaultPreferenceUtil.h"
+//#import "DefaultPreferenceUtil.h"
 
 @interface SplashController ()
 
