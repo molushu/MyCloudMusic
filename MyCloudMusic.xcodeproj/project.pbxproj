@@ -22,6 +22,7 @@
 		066704052BAFD5A60057071C /* BaseLogicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704042BAFD5A60057071C /* BaseLogicController.m */; };
 		066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704072BB1B54E0057071C /* TermServiceDialogController.m */; };
 		0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667040B2BB1C9680057071C /* ViewFactoryUtil.m */; };
+		066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667040F2BB3E5730057071C /* DefaultPreferenceUtil.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -81,6 +82,8 @@
 		0667040A2BB1C9680057071C /* ViewFactoryUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewFactoryUtil.h; sourceTree = "<group>"; };
 		0667040B2BB1C9680057071C /* ViewFactoryUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewFactoryUtil.m; sourceTree = "<group>"; };
 		0667040D2BB2DBAE0057071C /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		0667040E2BB3E5730057071C /* DefaultPreferenceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultPreferenceUtil.h; sourceTree = "<group>"; };
+		0667040F2BB3E5730057071C /* DefaultPreferenceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultPreferenceUtil.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 				0667040A2BB1C9680057071C /* ViewFactoryUtil.h */,
 				0667040B2BB1C9680057071C /* ViewFactoryUtil.m */,
 				0667040D2BB2DBAE0057071C /* Constant.h */,
+				0667040E2BB3E5730057071C /* DefaultPreferenceUtil.h */,
+				0667040F2BB3E5730057071C /* DefaultPreferenceUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -582,6 +587,7 @@
 				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
 				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
+				066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */,
 				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,
 				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
