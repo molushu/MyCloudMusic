@@ -38,4 +38,17 @@
     return result;
 }
 
++ (QMUIButton *)primaryOutlineButton{
+    QMUIButton *result = [self primaryButton];
+    result.layer.cornerRadius = SMALL_RADIUS;
+    
+    result.tintColor = [UIColor black130];
+    result.layer.borderWidth = 1;
+    result.layer.borderColor = [[UIColor black130] CGColor];
+    result.backgroundColor = [UIColor clearColor];
+    [result setTitleColor:[UIColor colorPrimary] forState:UIControlStateNormal];
+    
+    return result;
+}
+
 @end
