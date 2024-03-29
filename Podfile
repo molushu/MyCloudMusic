@@ -12,6 +12,8 @@ target 'MyCloudMusic' do
   pod 'MyLayout'
   # 作者说受R.swift的自由启发，获取自动完成的本地化字符串、资产目录图像名称和故事板对象
   pod 'R.objc'
+  # 轮播图
+  pod 'GKCycleScrollView'
 
   target 'MyCloudMusicTests' do
     inherit! :search_paths
