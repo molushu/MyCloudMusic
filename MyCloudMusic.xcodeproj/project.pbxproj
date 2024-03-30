@@ -24,6 +24,8 @@
 		0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667040B2BB1C9680057071C /* ViewFactoryUtil.m */; };
 		066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667040F2BB3E5730057071C /* DefaultPreferenceUtil.m */; };
 		066704162BB4FE900057071C /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704152BB4FE900057071C /* GuideController.m */; };
+		066704192BB7F0920057071C /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704182BB7F0920057071C /* Config.m */; };
+		0667041D2BB8158D0057071C /* MSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667041B2BB8158D0057071C /* MSNetwork.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -88,6 +90,10 @@
 		066704112BB468070057071C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		066704142BB4FE900057071C /* GuideController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideController.h; sourceTree = "<group>"; };
 		066704152BB4FE900057071C /* GuideController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideController.m; sourceTree = "<group>"; };
+		066704172BB7F0920057071C /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		066704182BB7F0920057071C /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		0667041B2BB8158D0057071C /* MSNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNetwork.m; sourceTree = "<group>"; };
+		0667041C2BB8158D0057071C /* MSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNetwork.h; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 		066703D32BA884F30057071C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				0667041A2BB8158D0057071C /* MSNetwork */,
 				066703D42BA884FB0057071C /* SuperUI */,
 			);
 			path = Vender;
@@ -211,6 +218,8 @@
 				066703F42BAC6F0E0057071C /* UIColor+Config.m */,
 				066703F62BAC84EA0057071C /* UIColor+Theme.h */,
 				066703F72BAC84EA0057071C /* UIColor+Theme.m */,
+				066704172BB7F0920057071C /* Config.h */,
+				066704182BB7F0920057071C /* Config.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -255,6 +264,15 @@
 				066704152BB4FE900057071C /* GuideController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0667041A2BB8158D0057071C /* MSNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				0667041B2BB8158D0057071C /* MSNetwork.m */,
+				0667041C2BB8158D0057071C /* MSNetwork.h */,
+			);
+			path = MSNetwork;
 			sourceTree = "<group>";
 		};
 		06B87E7B2B6733FC00DC99F2 = {
@@ -605,6 +623,8 @@
 				066704052BAFD5A60057071C /* BaseLogicController.m in Sources */,
 				066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */,
 				066703FB2BAC86D10057071C /* UIColor+SuperUI.m in Sources */,
+				066704192BB7F0920057071C /* Config.m in Sources */,
+				0667041D2BB8158D0057071C /* MSNetwork.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				066703E92BAB17A10057071C /* R.m in Sources */,
 				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
