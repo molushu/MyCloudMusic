@@ -101,11 +101,26 @@
 }
 
 - (void)onPrimaryClick:(QMUIButton *)sender{
-    
+    [self testGet];
 }
 
 - (void)onEnterClick:(QMUIButton *)sender{
     
+}
+
+- (void)testGet{
+    //参数
+    NSDictionary *parameters = @{@"nickname":@"ixuea"};
+
+    //地址
+    NSString *url = @"v1/sheets";
+    
+    //发送请求
+    [MSNetwork HTTPWithMethod:MSRequestMethodGET url:url parameters:parameters headers:nil cachePolicy:MSCachePolicyOnlyNetNoCache success:^(NSURLSessionDataTask *task,id  _Nonnull responseObject) {
+        NSLog(@"get success %@",responseObject);
+    } failure:^(NSURLSessionDataTask *task,NSError * _Nonnull error) {
+        NSLog(@"get error %@",error);
+    }];
 }
 
 #pragma mark  轮播图数据源

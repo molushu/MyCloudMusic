@@ -17,5 +17,6 @@
 #import "UIColor+Theme.h"
 #import "ViewFactoryUtil.h"
 #import "Constant.h"
+#import "Config.h"
 
 #endif /* PrefixHeader_pch */
