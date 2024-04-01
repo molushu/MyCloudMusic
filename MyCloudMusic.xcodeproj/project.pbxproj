@@ -26,6 +26,13 @@
 		066704162BB4FE900057071C /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704152BB4FE900057071C /* GuideController.m */; };
 		066704192BB7F0920057071C /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704182BB7F0920057071C /* Config.m */; };
 		0667041D2BB8158D0057071C /* MSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667041B2BB8158D0057071C /* MSNetwork.m */; };
+		066704212BBA404D0057071C /* SuperHttpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704202BBA404D0057071C /* SuperHttpUtil.m */; };
+		066704262BBA43EE0057071C /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704252BBA43EE0057071C /* BaseResponse.m */; };
+		066704292BBA44CC0057071C /* Meta.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704282BBA44CC0057071C /* Meta.m */; };
+		0667042C2BBA45110057071C /* SuperBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667042B2BBA45110057071C /* SuperBase.m */; };
+		0667042F2BBAC38B0057071C /* SuperBaseId.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667042E2BBAC38B0057071C /* SuperBaseId.m */; };
+		066704322BBAC4120057071C /* SuperCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704312BBAC4120057071C /* SuperCommon.m */; };
+		066704372BBAC5930057071C /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704362BBAC5930057071C /* Video.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -94,6 +101,20 @@
 		066704182BB7F0920057071C /* Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		0667041B2BB8158D0057071C /* MSNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNetwork.m; sourceTree = "<group>"; };
 		0667041C2BB8158D0057071C /* MSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNetwork.h; sourceTree = "<group>"; };
+		0667041F2BBA404D0057071C /* SuperHttpUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperHttpUtil.h; sourceTree = "<group>"; };
+		066704202BBA404D0057071C /* SuperHttpUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperHttpUtil.m; sourceTree = "<group>"; };
+		066704242BBA43EE0057071C /* BaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseResponse.h; sourceTree = "<group>"; };
+		066704252BBA43EE0057071C /* BaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseResponse.m; sourceTree = "<group>"; };
+		066704272BBA44CC0057071C /* Meta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meta.h; sourceTree = "<group>"; };
+		066704282BBA44CC0057071C /* Meta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meta.m; sourceTree = "<group>"; };
+		0667042A2BBA45110057071C /* SuperBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperBase.h; sourceTree = "<group>"; };
+		0667042B2BBA45110057071C /* SuperBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperBase.m; sourceTree = "<group>"; };
+		0667042D2BBAC38B0057071C /* SuperBaseId.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperBaseId.h; sourceTree = "<group>"; };
+		0667042E2BBAC38B0057071C /* SuperBaseId.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperBaseId.m; sourceTree = "<group>"; };
+		066704302BBAC4120057071C /* SuperCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCommon.h; sourceTree = "<group>"; };
+		066704312BBAC4120057071C /* SuperCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCommon.m; sourceTree = "<group>"; };
+		066704352BBAC5930057071C /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		066704362BBAC5930057071C /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +169,7 @@
 		066703CD2BA7E4600057071C /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				066704332BBAC5600057071C /* Video */,
 				066704122BB4FE600057071C /* Guide */,
 				066703CE2BA7E46E0057071C /* Splash */,
 			);
@@ -275,6 +297,57 @@
 			path = MSNetwork;
 			sourceTree = "<group>";
 		};
+		0667041E2BBA40240057071C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0667041F2BBA404D0057071C /* SuperHttpUtil.h */,
+				066704202BBA404D0057071C /* SuperHttpUtil.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		066704222BBA43BB0057071C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				066704232BBA43C40057071C /* Response */,
+				0667042A2BBA45110057071C /* SuperBase.h */,
+				0667042B2BBA45110057071C /* SuperBase.m */,
+				0667042D2BBAC38B0057071C /* SuperBaseId.h */,
+				0667042E2BBAC38B0057071C /* SuperBaseId.m */,
+				066704302BBAC4120057071C /* SuperCommon.h */,
+				066704312BBAC4120057071C /* SuperCommon.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		066704232BBA43C40057071C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				066704242BBA43EE0057071C /* BaseResponse.h */,
+				066704252BBA43EE0057071C /* BaseResponse.m */,
+				066704272BBA44CC0057071C /* Meta.h */,
+				066704282BBA44CC0057071C /* Meta.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		066704332BBAC5600057071C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				066704342BBAC56F0057071C /* Model */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		066704342BBAC56F0057071C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				066704352BBAC5930057071C /* Video.h */,
+				066704362BBAC5930057071C /* Video.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		06B87E7B2B6733FC00DC99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +373,8 @@
 		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				066704222BBA43BB0057071C /* Model */,
+				0667041E2BBA40240057071C /* Network */,
 				066704092BB1C9350057071C /* Util */,
 				066703FC2BAFD32D0057071C /* Controller */,
 				066703F22BAC6EE50057071C /* Config */,
@@ -618,20 +693,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066704322BBAC4120057071C /* SuperCommon.m in Sources */,
 				066703D22BA7E4AD0057071C /* SplashController.m in Sources */,
 				0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */,
 				066704052BAFD5A60057071C /* BaseLogicController.m in Sources */,
 				066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */,
+				0667042F2BBAC38B0057071C /* SuperBaseId.m in Sources */,
+				066704292BBA44CC0057071C /* Meta.m in Sources */,
 				066703FB2BAC86D10057071C /* UIColor+SuperUI.m in Sources */,
+				0667042C2BBA45110057071C /* SuperBase.m in Sources */,
 				066704192BB7F0920057071C /* Config.m in Sources */,
 				0667041D2BB8158D0057071C /* MSNetwork.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				066703E92BAB17A10057071C /* R.m in Sources */,
 				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
+				066704212BBA404D0057071C /* SuperHttpUtil.m in Sources */,
 				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
 				066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */,
+				066704372BBAC5930057071C /* Video.m in Sources */,
 				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
+				066704262BBA43EE0057071C /* BaseResponse.m in Sources */,
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,
 				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
 				066704162BB4FE900057071C /* GuideController.m in Sources */,

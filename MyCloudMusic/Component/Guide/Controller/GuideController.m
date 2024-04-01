@@ -10,6 +10,8 @@
 #import <GKCycleScrollView/GKPageControl.h>
 
 #import "GuideController.h"
+#import "SuperHttpUtil.h"
+#import "Video.h"
 
 @interface GuideController ()<GKCycleScrollViewDataSource,GKCycleScrollViewDelegate>
 
@@ -101,7 +103,16 @@
 }
 
 - (void)onPrimaryClick:(QMUIButton *)sender{
-    [self testGet];
+//    [self testGet];
+    
+    //请求对象
+    [SuperHttpUtil requestObjectWith:[Video class] url:@"v1/videos/98" parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodGET loading:NO controller:nil success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+        NSLog(@"request success %@",data);
+    } failure:^BOOL(BaseResponse * _Nullable baseResponse, NSError * _Nonnull error) {
+        NSLog(@"request error %@ %@",baseResponse,error);
+
+        return NO;
+    }];
 }
 
 - (void)onEnterClick:(QMUIButton *)sender{
