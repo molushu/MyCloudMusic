@@ -119,8 +119,13 @@
 //    }];
     
     //视频详情
-    [[DefaultRepository shared] videoDetail:@"98" success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
-        NSLog(@"request success %@",data);
+//    [[DefaultRepository shared] videoDetail:@"98" success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+//        NSLog(@"request success %@",data);
+//    }];
+    
+    //视频列表
+    [SuperHttpUtil requestListObjectWith:[Video class] url:@"v1/videos" success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+        NSLog(@"request success %@ %@",meta,data);
     }];
 }
 

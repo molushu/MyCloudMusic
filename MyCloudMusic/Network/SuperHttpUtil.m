@@ -34,27 +34,27 @@
 }
 
 + (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable id)parameter success:(SuperHttpSuccess)success{
-
+    
     [self postObjectWith:clazz url:url parameter:parameter success:success failure:nil];
 }
 
 + (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure{
-
+    
     //将参数对象转为字典
     //当然也可以让外界直接传递字典，只是这样外界不太方便管理
     NSDictionary *parameters = parameter.mj_keyValues;
-
+    
     [self postObjectWith:clazz url:url parameters:parameters loading:NO controller:nil success:success failure:nil];
 }
 
 #pragma mark - patch请求对象
 
 + (void)patchObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success{
-
+    
     //将参数对象转为字典
     //当然也可以让外界直接传递字典，只是这样外界不太方便管理
     NSDictionary *parameters = parameter.mj_keyValues;
-
+    
     [self requestObjectWith:clazz url:url parameters:parameters cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodPATCH loading:NO controller:nil success:success failure:nil];
 }
 
@@ -103,6 +103,54 @@
         
         //像网络错误，服务端返回401，400，500等都会都在这里
         NSLog(@"SuperHttpUtil failure %@",error);
+        [self handlerResponse:nil error:error failure:failure task:task placeholder:nil];
+    }];
+}
+
+#pragma mark - 请求列表
+
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success{
+    [self requestListObjectWith:clazz url:url parameters:parameters cachePolicy:cachePolicy loading:NO controller:controller success:success failure:nil];
+}
+
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url success:(SuperHttpListSuccess)success{
+    [self requestListObjectWith:clazz url:url parameters:nil success:success];
+}
+
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpListSuccess)success{
+    [self requestListObjectWith:clazz url:url parameters:parameters cachePolicy:MSCachePolicyOnlyNetNoCache loading:NO controller:nil success:success failure:nil];
+}
+
++ (void)requestListObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(nullable BaseLogicController *)controller success:(SuperHttpListSuccess)success failure:(_Nullable SuperHttpFail)failure{
+    //前置处理
+    [self preProcess:controller];
+    
+    [self requestWithMethod:MSRequestMethodGET url:url parameters:parameters cachePolicy:cachePolicy success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull data) {
+        //解析为BaseResponse
+        BaseResponse *baseResponse=[[BaseResponse class] mj_objectWithKeyValues:data];
+        
+        if ([self isSuccessWithResponse:baseResponse]) {
+            //请求成功
+
+            //默认data字段有值，因为对于get请求来说，我们默认必须有返回值
+            //那如果项目中有这种请求，还需要特殊处理
+            //像统计这类api，用post，但有些就是get
+            id dataDict=data[@"data"];
+
+            //将字典解析为meta
+            //因为OC中泛型没有类似Swift，Java等高级语言强大，所以里面的列表数据单独解析
+            id meta=[[Meta class] mj_objectWithKeyValues:dataDict];
+
+            //解析列表
+            dataDict=dataDict[@"data"];
+            NSArray *result = [clazz mj_objectArrayWithKeyValuesArray:dataDict];
+
+            //回调block
+            success(baseResponse,meta,result);
+        } else {
+            [self handlerResponse:baseResponse error:nil failure:failure task:task placeholder:nil];
+        }
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         [self handlerResponse:nil error:error failure:failure task:task placeholder:nil];
     }];
 }
