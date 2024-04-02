@@ -30,6 +30,30 @@ typedef void(^SuperHttpListSuccess)(BaseResponse *baseResponse,Meta *meta,NSArra
 typedef BOOL(^SuperHttpFail)(BaseResponse * _Nullable baseResponse,NSError *error);
 
 #pragma mark - 请求对象
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url id:(NSString *)id  success:(SuperHttpSuccess)success;
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpSuccess)success;
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success;
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure;
+
+#pragma mark - post请求对象
+
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure;
+
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable id)parameter success:(SuperHttpSuccess)success;
+
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure;
+
+#pragma mark - patch请求对象
+
++ (void)patchObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success;
+
+#pragma mark - delete请求对象
+
++ (void)deleteWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpSuccess)success;
  
 /// 请求对象
 /// @param clazz 对象模型class

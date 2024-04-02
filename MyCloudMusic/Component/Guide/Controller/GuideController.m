@@ -106,12 +106,21 @@
 //    [self testGet];
     
     //请求对象
-    [SuperHttpUtil requestObjectWith:[Video class] url:@"v1/videos/98" parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodGET loading:NO controller:nil success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+//    [SuperHttpUtil requestObjectWith:[Video class] url:@"v1/videos/98" parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodGET loading:NO controller:nil success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+//        NSLog(@"request success %@",data);
+//    } failure:^BOOL(BaseResponse * _Nullable baseResponse, NSError * _Nonnull error) {
+//        NSLog(@"request error %@ %@",baseResponse,error);
+//
+//        return NO;
+//    }];
+    
+//    [SuperHttpUtil requestObjectWith:[Video class] url:@"v1/videos" id:@"98" success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+//        NSLog(@"request success %@",data);
+//    }];
+    
+    //视频详情
+    [[DefaultRepository shared] videoDetail:@"98" success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
         NSLog(@"request success %@",data);
-    } failure:^BOOL(BaseResponse * _Nullable baseResponse, NSError * _Nonnull error) {
-        NSLog(@"request error %@ %@",baseResponse,error);
-
-        return NO;
     }];
 }
 

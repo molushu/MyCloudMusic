@@ -9,6 +9,63 @@
 
 @implementation SuperHttpUtil
 
+#pragma mark - 请求对象
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url id:(NSString *)id  success:(SuperHttpSuccess)success{
+    [self requestObjectWith:clazz url:[NSString stringWithFormat:@"%@/%@",url,id] parameters:nil cachePolicy:MSCachePolicyOnlyNetNoCache loading:NO controller:nil success:success failure:nil];
+}
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpSuccess)success{
+    [self requestObjectWith:clazz url:url parameters:parameters cachePolicy:MSCachePolicyOnlyNetNoCache loading:NO controller:nil success:success failure:nil];
+}
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success{
+    [self requestObjectWith:clazz url:url parameters:parameters cachePolicy:cachePolicy loading:loading controller:controller success:success failure:nil];
+}
+
++ (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure{
+    [self requestObjectWith:clazz url:url parameters:parameters cachePolicy:cachePolicy method:MSRequestMethodGET loading:loading controller:controller success:success failure:failure];
+}
+
+#pragma mark - post请求对象
+
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure{
+    [self requestObjectWith:clazz url:url parameters:parameters cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodPOST loading:loading controller:controller success:success failure:failure];
+}
+
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable id)parameter success:(SuperHttpSuccess)success{
+
+    [self postObjectWith:clazz url:url parameter:parameter success:success failure:nil];
+}
+
++ (void)postObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success failure:(_Nullable SuperHttpFail)failure{
+
+    //将参数对象转为字典
+    //当然也可以让外界直接传递字典，只是这样外界不太方便管理
+    NSDictionary *parameters = parameter.mj_keyValues;
+
+    [self postObjectWith:clazz url:url parameters:parameters loading:NO controller:nil success:success failure:nil];
+}
+
+#pragma mark - patch请求对象
+
++ (void)patchObjectWith:(Class)clazz url:(NSString *)url parameter:(nullable SuperBase *)parameter success:(SuperHttpSuccess)success{
+
+    //将参数对象转为字典
+    //当然也可以让外界直接传递字典，只是这样外界不太方便管理
+    NSDictionary *parameters = parameter.mj_keyValues;
+
+    [self requestObjectWith:clazz url:url parameters:parameters cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodPATCH loading:NO controller:nil success:success failure:nil];
+}
+
+#pragma mark - delete请求对象
+
++ (void)deleteWith:(Class)clazz url:(NSString *)url parameters:(nullable NSDictionary *)parameters  success:(SuperHttpSuccess)success{
+    [self requestObjectWith:clazz url:url parameters:parameters cachePolicy:MSCachePolicyOnlyNetNoCache method:MSRequestMethodDELETE loading:NO controller:nil success:success failure:nil];
+}
+
+#pragma mark - 通用请求对象
+
 + (void)requestObjectWith:(Class)clazz url:(NSString *)url parameters:(NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy method:(MSRequestMethod)method loading:(BOOL)loading controller:(BaseLogicController *)controller success:(SuperHttpSuccess)success failure:(SuperHttpFail)failure{
     //检查是否显示Loading
     [self checkShowLoading:loading];
@@ -50,6 +107,8 @@
     }];
 }
 
+#pragma mark - 辅助方法
+
 +(void)checkShowLoading:(BOOL)loading{
 
 }
@@ -81,6 +140,8 @@
 +(void)handlerResponse:(BaseResponse *)data error:(NSError *)error failure:(SuperHttpFail)failure task:(NSURLSessionDataTask *)task placeholder:(nullable NSObject *)placeholder {
 
 }
+
+#pragma mark - 统一网络请求方法
 
 + (void)requestWithMethod:(MSRequestMethod)method url:(NSString *)url  parameters:(NSDictionary *)parameters cachePolicy:(MSCachePolicy)cachePolicy success:(MSHttpSuccess)success  failure:(MSHttpFail)failure{
     // 发起请求

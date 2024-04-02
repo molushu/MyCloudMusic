@@ -33,6 +33,7 @@
 		0667042F2BBAC38B0057071C /* SuperBaseId.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667042E2BBAC38B0057071C /* SuperBaseId.m */; };
 		066704322BBAC4120057071C /* SuperCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704312BBAC4120057071C /* SuperCommon.m */; };
 		066704372BBAC5930057071C /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704362BBAC5930057071C /* Video.m */; };
+		0667043B2BBC16D40057071C /* DefaultRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667043A2BBC16D40057071C /* DefaultRepository.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -115,6 +116,8 @@
 		066704312BBAC4120057071C /* SuperCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCommon.m; sourceTree = "<group>"; };
 		066704352BBAC5930057071C /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		066704362BBAC5930057071C /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		066704392BBC16D40057071C /* DefaultRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultRepository.h; sourceTree = "<group>"; };
+		0667043A2BBC16D40057071C /* DefaultRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultRepository.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -348,6 +351,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		066704382BBC16A20057071C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				066704392BBC16D40057071C /* DefaultRepository.h */,
+				0667043A2BBC16D40057071C /* DefaultRepository.m */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		06B87E7B2B6733FC00DC99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +385,7 @@
 		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				066704382BBC16A20057071C /* Repository */,
 				066704222BBA43BB0057071C /* Model */,
 				0667041E2BBA40240057071C /* Network */,
 				066704092BB1C9350057071C /* Util */,
@@ -714,6 +727,7 @@
 				066704372BBAC5930057071C /* Video.m in Sources */,
 				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
 				066704262BBA43EE0057071C /* BaseResponse.m in Sources */,
+				0667043B2BBC16D40057071C /* DefaultRepository.m in Sources */,
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,
 				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
 				066704162BB4FE900057071C /* GuideController.m in Sources */,
