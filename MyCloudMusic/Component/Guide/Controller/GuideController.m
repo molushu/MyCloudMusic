@@ -124,7 +124,12 @@
 //    }];
     
     //视频列表
-    [SuperHttpUtil requestListObjectWith:[Video class] url:@"v1/videos" success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+//    [SuperHttpUtil requestListObjectWith:[Video class] url:@"v1/videos" success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+//        NSLog(@"request success %@ %@",meta,data);
+//    }];
+    
+    [[DefaultRepository shared] videos:1 success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+
         NSLog(@"request success %@ %@",meta,data);
     }];
 }
