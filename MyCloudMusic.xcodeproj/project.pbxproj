@@ -34,6 +34,8 @@
 		066704322BBAC4120057071C /* SuperCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704312BBAC4120057071C /* SuperCommon.m */; };
 		066704372BBAC5930057071C /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704362BBAC5930057071C /* Video.m */; };
 		0667043B2BBC16D40057071C /* DefaultRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667043A2BBC16D40057071C /* DefaultRepository.m */; };
+		0667043F2BC2F30A0057071C /* PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667043E2BC2F30A0057071C /* PlaceholderView.m */; };
+		066704442BC2FAD10057071C /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704432BC2FAD10057071C /* StringUtil.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -118,6 +120,10 @@
 		066704362BBAC5930057071C /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 		066704392BBC16D40057071C /* DefaultRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultRepository.h; sourceTree = "<group>"; };
 		0667043A2BBC16D40057071C /* DefaultRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultRepository.m; sourceTree = "<group>"; };
+		0667043D2BC2F30A0057071C /* PlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceholderView.h; sourceTree = "<group>"; };
+		0667043E2BC2F30A0057071C /* PlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceholderView.m; sourceTree = "<group>"; };
+		066704422BC2FAD10057071C /* StringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		066704432BC2FAD10057071C /* StringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 		066703D32BA884F30057071C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				066704402BC2FA990057071C /* SuperOC */,
 				0667041A2BB8158D0057071C /* MSNetwork */,
 				066703D42BA884FB0057071C /* SuperUI */,
 			);
@@ -360,6 +367,32 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		0667043C2BC2F2D30057071C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0667043D2BC2F30A0057071C /* PlaceholderView.h */,
+				0667043E2BC2F30A0057071C /* PlaceholderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		066704402BC2FA990057071C /* SuperOC */ = {
+			isa = PBXGroup;
+			children = (
+				066704412BC2FAAF0057071C /* Util */,
+			);
+			path = SuperOC;
+			sourceTree = "<group>";
+		};
+		066704412BC2FAAF0057071C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				066704422BC2FAD10057071C /* StringUtil.h */,
+				066704432BC2FAD10057071C /* StringUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		06B87E7B2B6733FC00DC99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +418,7 @@
 		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				0667043C2BC2F2D30057071C /* View */,
 				066704382BBC16A20057071C /* Repository */,
 				066704222BBA43BB0057071C /* Model */,
 				0667041E2BBA40240057071C /* Network */,
@@ -706,6 +740,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066704442BC2FAD10057071C /* StringUtil.m in Sources */,
 				066704322BBAC4120057071C /* SuperCommon.m in Sources */,
 				066703D22BA7E4AD0057071C /* SplashController.m in Sources */,
 				0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */,
@@ -726,6 +761,7 @@
 				066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */,
 				066704372BBAC5930057071C /* Video.m in Sources */,
 				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
+				0667043F2BC2F30A0057071C /* PlaceholderView.m in Sources */,
 				066704262BBA43EE0057071C /* BaseResponse.m in Sources */,
 				0667043B2BBC16D40057071C /* DefaultRepository.m in Sources */,
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,

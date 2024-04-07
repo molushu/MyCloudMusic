@@ -6,6 +6,7 @@
 //
 
 #import "SuperHttpUtil.h"
+#import "PlaceholderView.h"
 
 @implementation SuperHttpUtil
 
@@ -185,8 +186,74 @@
 /// 尝试处理错误网络请求
 /// @param data <#data description#>
 /// @param error <#error description#>
-+(void)handlerResponse:(BaseResponse *)data error:(NSError *)error failure:(SuperHttpFail)failure task:(NSURLSessionDataTask *)task placeholder:(nullable NSObject *)placeholder {
++(void)handlerResponse:(BaseResponse *)data error:(NSError *)error failure:(SuperHttpFail)failure task:(NSURLSessionDataTask *)task placeholder:(nullable PlaceholderView *)placeholder {
+    if (failure && failure(data,error)) {
+        //回调失败block
+        //返回YES，父类不自动处理错误
+        
+        //子类需要关闭loading，当前也可以父类关闭
+        //暴露给子类的原因是，有些场景会用到
+        //例如：请求失败后，在调用一个接口，如果中途关闭了
+        //用户能看到多次显示loading，体验没那么好
+    }else{
+        //自动处理错误
+        [self handlerResponseError:data error:error task:task placeholder:placeholder];
+    }
+}
 
+/// 处理错误网络请求
+/// @param data <#data description#>
+/// @param error <#error description#>
++(void)handlerResponseError:(BaseResponse *)data error:(NSError *)error task:(NSURLSessionDataTask *)task  placeholder:(PlaceholderView *)placeholder{
+    if (error) {
+        //先处理有异常的请求
+        [self handleError:error task:task placeholder:placeholder];
+    }else{
+        if ([StringUtil isBlank:data.message]) {
+            //没有错误提示信息
+//            [TipUtil showErrorWithToast:R.string.localizable.errorUnknown placeholderView:placeholder placeholderTitle:R.string.localizable.errorUnknown];
+        } else {
+            //有错误提示
+//            [TipUtil showErrorWithToast:data.message placeholderView:placeholder placeholderTitle:data.message];
+        }
+    }
+    
+}
+
++(void)handleError:(NSError *)error task:(NSURLSessionDataTask *)task placeholder:(nullable PlaceholderView *)placeholder{
+    NSString *errorMessage;
+    switch (error.code) {
+        case -1011://NSURLErrorBadServerResponse
+            errorMessage = @"服务器响应异常";
+            
+            [self handleHttpError:error task:task placeholder:placeholder];
+            
+            break;
+        default:
+            errorMessage = @"未知错误";
+            break;
+    }
+    
+    NSLog(@"SuperHttpUtil handleError %@", errorMessage);
+}
+
++(void)handleHttpError:(NSError *)error task:(NSURLSessionDataTask *)task placeholder:(nullable PlaceholderView *)placeholder{
+    NSHTTPURLResponse * responses = (NSHTTPURLResponse *)task.response;
+    
+    //具体响应码
+    NSInteger code = responses.statusCode;
+    if (code == 401) {
+//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotAuth placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotAuth];
+//        [AppDelegate.shared logout];
+    } else if (code == 403) {
+//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotPermission placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotPermission];
+    } else if (code == 404) {
+//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotFound placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotFound];
+    } else if (code >= 500) {
+//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkServer placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkServer];
+    } else {
+//        [TipUtil showErrorWithToast:R.string.localizable.errorUnknown placeholderView:placeholder placeholderTitle:R.string.localizable.errorUnknown];
+    }
 }
 
 #pragma mark - 统一网络请求方法
