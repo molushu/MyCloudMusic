@@ -36,6 +36,7 @@
 		0667043B2BBC16D40057071C /* DefaultRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667043A2BBC16D40057071C /* DefaultRepository.m */; };
 		0667043F2BC2F30A0057071C /* PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667043E2BC2F30A0057071C /* PlaceholderView.m */; };
 		066704442BC2FAD10057071C /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704432BC2FAD10057071C /* StringUtil.m */; };
+		066704482BC438F20057071C /* SuperToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704472BC438F20057071C /* SuperToast.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -124,6 +125,8 @@
 		0667043E2BC2F30A0057071C /* PlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceholderView.m; sourceTree = "<group>"; };
 		066704422BC2FAD10057071C /* StringUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		066704432BC2FAD10057071C /* StringUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		066704462BC438F20057071C /* SuperToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperToast.h; sourceTree = "<group>"; };
+		066704472BC438F20057071C /* SuperToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperToast.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 		066703D32BA884F30057071C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				066704452BC438D20057071C /* Toast */,
 				066704402BC2FA990057071C /* SuperOC */,
 				0667041A2BB8158D0057071C /* MSNetwork */,
 				066703D42BA884FB0057071C /* SuperUI */,
@@ -391,6 +395,15 @@
 				066704432BC2FAD10057071C /* StringUtil.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		066704452BC438D20057071C /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				066704462BC438F20057071C /* SuperToast.h */,
+				066704472BC438F20057071C /* SuperToast.m */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 		06B87E7B2B6733FC00DC99F2 = {
@@ -747,6 +760,7 @@
 				066704052BAFD5A60057071C /* BaseLogicController.m in Sources */,
 				066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */,
 				0667042F2BBAC38B0057071C /* SuperBaseId.m in Sources */,
+				066704482BC438F20057071C /* SuperToast.m in Sources */,
 				066704292BBA44CC0057071C /* Meta.m in Sources */,
 				066703FB2BAC86D10057071C /* UIColor+SuperUI.m in Sources */,
 				0667042C2BBA45110057071C /* SuperBase.m in Sources */,

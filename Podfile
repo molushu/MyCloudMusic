@@ -26,6 +26,10 @@ target 'MyCloudMusic' do
   #缓存框架
   #https://github.com/ibireme/YYCache
   pod 'YYCache'
+  
+  #指示器
+  #https://github.com/jdg/MBProgressHUD
+  pod 'MBProgressHUD'
 
   #JSON解析
   #https://github.com/CoderMJLee/MJExtension

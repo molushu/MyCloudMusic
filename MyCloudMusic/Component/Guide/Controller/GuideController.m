@@ -128,10 +128,17 @@
 //        NSLog(@"request success %@ %@",meta,data);
 //    }];
     
-    [[DefaultRepository shared] videos:1 success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+//    [[DefaultRepository shared] videos:1 success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {
+//
+//        NSLog(@"request success %@ %@",meta,data);
+//    }];
+    
+//    [SuperToast showWithTitle:R.string.localizable.enterUsername];
+    [SuperToast showLoading];
 
-        NSLog(@"request success %@ %@",meta,data);
-    }];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SuperToast hideLoading];
+    });
 }
 
 - (void)onEnterClick:(QMUIButton *)sender{
