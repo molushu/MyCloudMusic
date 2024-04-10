@@ -156,15 +156,22 @@
     }];
 }
 
-#pragma mark - 辅助方法
+#pragma mark - 加载提示
 
 +(void)checkShowLoading:(BOOL)loading{
-
+    if (loading) {
+        //这里就不在实现支持传入自定义消息了
+        [SuperToast showLoading];
+    }
 }
 
 +(void)checkHideLoading:(BOOL)loading{
-    
+    if (loading) {
+        [SuperToast hideLoading];
+    }
 }
+
+#pragma mark - 辅助方法
 
 +(void)preProcess:(BaseLogicController *)controller{
 
@@ -211,10 +218,10 @@
     }else{
         if ([StringUtil isBlank:data.message]) {
             //没有错误提示信息
-//            [TipUtil showErrorWithToast:R.string.localizable.errorUnknown placeholderView:placeholder placeholderTitle:R.string.localizable.errorUnknown];
+            [TipUtil showErrorWithToast:R.string.localizable.errorUnknown placeholderView:placeholder placeholderTitle:R.string.localizable.errorUnknown];
         } else {
             //有错误提示
-//            [TipUtil showErrorWithToast:data.message placeholderView:placeholder placeholderTitle:data.message];
+            [TipUtil showErrorWithToast:data.message placeholderView:placeholder placeholderTitle:data.message];
         }
     }
     
@@ -243,16 +250,16 @@
     //具体响应码
     NSInteger code = responses.statusCode;
     if (code == 401) {
-//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotAuth placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotAuth];
+        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotAuth placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotAuth];
 //        [AppDelegate.shared logout];
     } else if (code == 403) {
-//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotPermission placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotPermission];
+        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotPermission placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotPermission];
     } else if (code == 404) {
-//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotFound placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotFound];
+        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkNotFound placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkNotFound];
     } else if (code >= 500) {
-//        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkServer placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkServer];
+        [TipUtil showErrorWithToast:R.string.localizable.errorNetworkServer placeholderView:placeholder placeholderTitle:R.string.localizable.errorNetworkServer];
     } else {
-//        [TipUtil showErrorWithToast:R.string.localizable.errorUnknown placeholderView:placeholder placeholderTitle:R.string.localizable.errorUnknown];
+        [TipUtil showErrorWithToast:R.string.localizable.errorUnknown placeholderView:placeholder placeholderTitle:R.string.localizable.errorUnknown];
     }
 }
 

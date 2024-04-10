@@ -119,8 +119,16 @@
 //    }];
     
     //视频详情
-//    [[DefaultRepository shared] videoDetail:@"98" success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+//    [[DefaultRepository shared] videoDetail:@"4567" success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
 //        NSLog(@"request success %@",data);
+//    }];
+    
+//    [[DefaultRepository shared] videoDetail:@"4567" success:^(BaseResponse * _Nonnull baseResponse, id  _Nonnull data) {
+//        NSLog(@"request success %@",data);
+//    } failure:^BOOL(BaseResponse * _Nullable baseResponse, NSError * _Nonnull error) {
+//        NSLog(@"request error %@ %@",baseResponse,error);
+//
+//        return YES;
 //    }];
     
     //视频列表
@@ -134,11 +142,11 @@
 //    }];
     
 //    [SuperToast showWithTitle:R.string.localizable.enterUsername];
-    [SuperToast showLoading];
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [SuperToast hideLoading];
-    });
+//    [SuperToast showLoading];
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [SuperToast hideLoading];
+//    });
 }
 
 - (void)onEnterClick:(QMUIButton *)sender{
