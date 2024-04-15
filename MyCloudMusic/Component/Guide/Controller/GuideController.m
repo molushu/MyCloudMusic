@@ -12,6 +12,7 @@
 #import "GuideController.h"
 #import "SuperHttpUtil.h"
 #import "Video.h"
+#import "AppDelegate.h"
 
 @interface GuideController ()<GKCycleScrollViewDataSource,GKCycleScrollViewDelegate>
 
@@ -150,7 +151,7 @@
 }
 
 - (void)onEnterClick:(QMUIButton *)sender{
-    
+    [AppDelegate.shared toMain];
 }
 
 - (void)testGet{

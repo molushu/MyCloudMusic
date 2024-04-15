@@ -38,6 +38,13 @@
 		066704442BC2FAD10057071C /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704432BC2FAD10057071C /* StringUtil.m */; };
 		066704482BC438F20057071C /* SuperToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704472BC438F20057071C /* SuperToast.m */; };
 		0667044B2BC593EA0057071C /* TipUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667044A2BC593EA0057071C /* TipUtil.m */; };
+		066704502BCD62840057071C /* DiscoveryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667044F2BCD62840057071C /* DiscoveryController.m */; };
+		066704542BCD63A30057071C /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704532BCD63A30057071C /* VideoController.m */; };
+		066704592BCD644A0057071C /* MeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704582BCD644A0057071C /* MeController.m */; };
+		0667045E2BCD64BE0057071C /* FeedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667045D2BCD64BE0057071C /* FeedController.m */; };
+		066704632BCD652B0057071C /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704622BCD652B0057071C /* RoomController.m */; };
+		066704682BCD67B30057071C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704672BCD67B30057071C /* MainController.m */; };
+		0667046C2BCD75100057071C /* UIImage+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667046B2BCD75100057071C /* UIImage+SuperUI.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -130,6 +137,20 @@
 		066704472BC438F20057071C /* SuperToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperToast.m; sourceTree = "<group>"; };
 		066704492BC593EA0057071C /* TipUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipUtil.h; sourceTree = "<group>"; };
 		0667044A2BC593EA0057071C /* TipUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipUtil.m; sourceTree = "<group>"; };
+		0667044E2BCD62840057071C /* DiscoveryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryController.h; sourceTree = "<group>"; };
+		0667044F2BCD62840057071C /* DiscoveryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryController.m; sourceTree = "<group>"; };
+		066704522BCD63A30057071C /* VideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
+		066704532BCD63A30057071C /* VideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
+		066704572BCD644A0057071C /* MeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeController.h; sourceTree = "<group>"; };
+		066704582BCD644A0057071C /* MeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeController.m; sourceTree = "<group>"; };
+		0667045C2BCD64BE0057071C /* FeedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedController.h; sourceTree = "<group>"; };
+		0667045D2BCD64BE0057071C /* FeedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedController.m; sourceTree = "<group>"; };
+		066704612BCD652B0057071C /* RoomController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoomController.h; sourceTree = "<group>"; };
+		066704622BCD652B0057071C /* RoomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomController.m; sourceTree = "<group>"; };
+		066704662BCD67B30057071C /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		066704672BCD67B30057071C /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		0667046A2BCD75100057071C /* UIImage+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SuperUI.h"; sourceTree = "<group>"; };
+		0667046B2BCD75100057071C /* UIImage+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SuperUI.m"; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -184,6 +205,11 @@
 		066703CD2BA7E4600057071C /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				066704642BCD67920057071C /* Main */,
+				0667045F2BCD650B0057071C /* Room */,
+				0667045A2BCD64990057071C /* Feed */,
+				066704552BCD64240057071C /* Me */,
+				0667044C2BCD623D0057071C /* Discovery */,
 				066704332BBAC5600057071C /* Video */,
 				066704122BB4FE600057071C /* Guide */,
 				066703CE2BA7E46E0057071C /* Splash */,
@@ -224,6 +250,7 @@
 		066703D42BA884FB0057071C /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				066704692BCD74E40057071C /* Image */,
 				066703EB2BABC7F90057071C /* Color */,
 				066703D52BA885060057071C /* Date */,
 			);
@@ -353,6 +380,7 @@
 		066704332BBAC5600057071C /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				066704512BCD63870057071C /* Controller */,
 				066704342BBAC56F0057071C /* Model */,
 			);
 			path = Video;
@@ -409,6 +437,109 @@
 				066704472BC438F20057071C /* SuperToast.m */,
 			);
 			path = Toast;
+			sourceTree = "<group>";
+		};
+		0667044C2BCD623D0057071C /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				0667044D2BCD624D0057071C /* Controller */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		0667044D2BCD624D0057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0667044E2BCD62840057071C /* DiscoveryController.h */,
+				0667044F2BCD62840057071C /* DiscoveryController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		066704512BCD63870057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				066704522BCD63A30057071C /* VideoController.h */,
+				066704532BCD63A30057071C /* VideoController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		066704552BCD64240057071C /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				066704562BCD642B0057071C /* Controller */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		066704562BCD642B0057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				066704572BCD644A0057071C /* MeController.h */,
+				066704582BCD644A0057071C /* MeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0667045A2BCD64990057071C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				0667045B2BCD64A20057071C /* Controller */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		0667045B2BCD64A20057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0667045C2BCD64BE0057071C /* FeedController.h */,
+				0667045D2BCD64BE0057071C /* FeedController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0667045F2BCD650B0057071C /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				066704602BCD65130057071C /* Controller */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		066704602BCD65130057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				066704612BCD652B0057071C /* RoomController.h */,
+				066704622BCD652B0057071C /* RoomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		066704642BCD67920057071C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				066704652BCD679B0057071C /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		066704652BCD679B0057071C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				066704662BCD67B30057071C /* MainController.h */,
+				066704672BCD67B30057071C /* MainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		066704692BCD74E40057071C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0667046A2BCD75100057071C /* UIImage+SuperUI.h */,
+				0667046B2BCD75100057071C /* UIImage+SuperUI.m */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 		06B87E7B2B6733FC00DC99F2 = {
@@ -765,13 +896,17 @@
 				0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */,
 				066704052BAFD5A60057071C /* BaseLogicController.m in Sources */,
 				066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */,
+				066704542BCD63A30057071C /* VideoController.m in Sources */,
 				0667042F2BBAC38B0057071C /* SuperBaseId.m in Sources */,
+				066704632BCD652B0057071C /* RoomController.m in Sources */,
 				066704482BC438F20057071C /* SuperToast.m in Sources */,
 				066704292BBA44CC0057071C /* Meta.m in Sources */,
 				066703FB2BAC86D10057071C /* UIColor+SuperUI.m in Sources */,
 				0667042C2BBA45110057071C /* SuperBase.m in Sources */,
 				066704192BB7F0920057071C /* Config.m in Sources */,
+				066704502BCD62840057071C /* DiscoveryController.m in Sources */,
 				0667041D2BB8158D0057071C /* MSNetwork.m in Sources */,
+				066704592BCD644A0057071C /* MeController.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				066703E92BAB17A10057071C /* R.m in Sources */,
 				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
@@ -779,9 +914,12 @@
 				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
 				066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */,
+				0667046C2BCD75100057071C /* UIImage+SuperUI.m in Sources */,
 				066704372BBAC5930057071C /* Video.m in Sources */,
 				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
 				0667043F2BC2F30A0057071C /* PlaceholderView.m in Sources */,
+				066704682BCD67B30057071C /* MainController.m in Sources */,
+				0667045E2BCD64BE0057071C /* FeedController.m in Sources */,
 				066704262BBA43EE0057071C /* BaseResponse.m in Sources */,
 				0667043B2BBC16D40057071C /* DefaultRepository.m in Sources */,
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,
