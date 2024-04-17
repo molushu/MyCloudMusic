@@ -16,7 +16,8 @@
 - (void)initViews {
     [super initViews];
     
-    [self setBackgroundColor:[UIColor redColor]];
+    //初始化TableView结构
+    [self initTableViewSafeArea];
 }
 
 @end

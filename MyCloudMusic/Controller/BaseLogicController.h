@@ -11,7 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseLogicController : BaseCommonController
+@interface BaseLogicController : BaseCommonController<UITableViewDataSource,UITableViewDelegate>
+/// TableView
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *datum;
 
 /// 根容器
@@ -39,6 +41,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 初始化垂直方向LinearLayout容器，四边都在安全区内
 - (void)initLinearLayoutSafeArea;
+
+/// 初始化TableView，四边都在安全区内
+- (void)initTableViewSafeArea;
+
+/// 使用默认分割线
+- (void)initDefaultTableViewDivider;
 
 @end
 
