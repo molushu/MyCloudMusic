@@ -48,6 +48,15 @@ NS_ASSUME_NONNULL_BEGIN
 /// 使用默认分割线
 - (void)initDefaultTableViewDivider;
 
+#pragma mark - 加载数据
+
+/// 加载数据方法
+/// @param isPlaceholder 是否是通过placeholder控件触发的
+-(void)loadData:(BOOL)isPlaceholder;
+
+/// 加载数据方法
+-(void)loadData;
+
 @end
 
 NS_ASSUME_NONNULL_END

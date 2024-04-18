@@ -45,6 +45,8 @@
 		066704632BCD652B0057071C /* RoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704622BCD652B0057071C /* RoomController.m */; };
 		066704682BCD67B30057071C /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704672BCD67B30057071C /* MainController.m */; };
 		0667046C2BCD75100057071C /* UIImage+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667046B2BCD75100057071C /* UIImage+SuperUI.m */; };
+		066704712BD163D90057071C /* Ad.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704702BD163D90057071C /* Ad.m */; };
+		066704752BD165230057071C /* BannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704742BD165230057071C /* BannerData.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -151,6 +153,10 @@
 		066704672BCD67B30057071C /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		0667046A2BCD75100057071C /* UIImage+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SuperUI.h"; sourceTree = "<group>"; };
 		0667046B2BCD75100057071C /* UIImage+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SuperUI.m"; sourceTree = "<group>"; };
+		0667046F2BD163D90057071C /* Ad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ad.h; sourceTree = "<group>"; };
+		066704702BD163D90057071C /* Ad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ad.m; sourceTree = "<group>"; };
+		066704732BD165230057071C /* BannerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerData.h; sourceTree = "<group>"; };
+		066704742BD165230057071C /* BannerData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerData.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -205,6 +211,7 @@
 		066703CD2BA7E4600057071C /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				0667046D2BD163B40057071C /* Ad */,
 				066704642BCD67920057071C /* Main */,
 				0667045F2BCD650B0057071C /* Room */,
 				0667045A2BCD64990057071C /* Feed */,
@@ -442,6 +449,7 @@
 		0667044C2BCD623D0057071C /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				066704722BD165050057071C /* Model */,
 				0667044D2BCD624D0057071C /* Controller */,
 			);
 			path = Discovery;
@@ -540,6 +548,32 @@
 				0667046B2BCD75100057071C /* UIImage+SuperUI.m */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		0667046D2BD163B40057071C /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				0667046E2BD163BD0057071C /* Model */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		0667046E2BD163BD0057071C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0667046F2BD163D90057071C /* Ad.h */,
+				066704702BD163D90057071C /* Ad.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		066704722BD165050057071C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				066704732BD165230057071C /* BannerData.h */,
+				066704742BD165230057071C /* BannerData.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		06B87E7B2B6733FC00DC99F2 = {
@@ -913,8 +947,10 @@
 				066704212BBA404D0057071C /* SuperHttpUtil.m in Sources */,
 				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
+				066704752BD165230057071C /* BannerData.m in Sources */,
 				066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */,
 				0667046C2BCD75100057071C /* UIImage+SuperUI.m in Sources */,
+				066704712BD163D90057071C /* Ad.m in Sources */,
 				066704372BBAC5930057071C /* Video.m in Sources */,
 				066703FF2BAFD3790057071C /* BaseController.m in Sources */,
 				0667043F2BC2F30A0057071C /* PlaceholderView.m in Sources */,

@@ -145,4 +145,17 @@
     return _datum.count;
 }
 
+#pragma mark - 加载数据
+
+/// 加载数据方法
+/// @param isPlaceholder 是否是通过placeholder控件触发的
+-(void)loadData:(BOOL)isPlaceholder{
+    
+}
+
+/// 加载数据方法
+-(void)loadData{
+    [self loadData:NO];
+}
+
 @end
