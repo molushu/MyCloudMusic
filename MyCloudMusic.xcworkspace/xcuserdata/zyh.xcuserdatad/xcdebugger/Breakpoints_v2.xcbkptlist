@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4564B641-7DBF-41A6-8F09-FF435B2E3C6A"
+            uuid = "018D9A55-C97C-46A6-B6D2-C47486D271C9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MyCloudMusic/Component/Discovery/Controller/DiscoveryController.m"
+            filePath = "Pods/QMUIKit/QMUIKit/UIKitExtensions/UISearchBar+QMUI.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-loadData:"
+            startingLineNumber = "706"
+            endingLineNumber = "706"
+            landmarkName = "-qmuisb_adjustedSearchBarFrameByOriginalFrame:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

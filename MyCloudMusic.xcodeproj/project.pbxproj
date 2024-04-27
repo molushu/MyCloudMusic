@@ -47,6 +47,8 @@
 		0667046C2BCD75100057071C /* UIImage+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0667046B2BCD75100057071C /* UIImage+SuperUI.m */; };
 		066704712BD163D90057071C /* Ad.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704702BD163D90057071C /* Ad.m */; };
 		066704752BD165230057071C /* BannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 066704742BD165230057071C /* BannerData.m */; };
+		06B5B59A2BDCCC4F00107E46 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B5B5992BDCCC4F00107E46 /* BaseTableViewCell.m */; };
+		06B5B59E2BDCD34600107E46 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B5B59D2BDCD34600107E46 /* BannerCell.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -157,6 +159,10 @@
 		066704702BD163D90057071C /* Ad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ad.m; sourceTree = "<group>"; };
 		066704732BD165230057071C /* BannerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerData.h; sourceTree = "<group>"; };
 		066704742BD165230057071C /* BannerData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerData.m; sourceTree = "<group>"; };
+		06B5B5982BDCCC4F00107E46 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		06B5B5992BDCCC4F00107E46 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		06B5B59C2BDCD34600107E46 /* BannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerCell.h; sourceTree = "<group>"; };
+		06B5B59D2BDCD34600107E46 /* BannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerCell.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -449,6 +455,7 @@
 		0667044C2BCD623D0057071C /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				06B5B59B2BDCD30700107E46 /* Cell */,
 				066704722BD165050057071C /* Model */,
 				0667044D2BCD624D0057071C /* Controller */,
 			);
@@ -576,6 +583,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		06B5B5972BDCCC1300107E46 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				06B5B5982BDCCC4F00107E46 /* BaseTableViewCell.h */,
+				06B5B5992BDCCC4F00107E46 /* BaseTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		06B5B59B2BDCD30700107E46 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				06B5B59C2BDCD34600107E46 /* BannerCell.h */,
+				06B5B59D2BDCD34600107E46 /* BannerCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		06B87E7B2B6733FC00DC99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +626,7 @@
 		06B87E862B6733FC00DC99F2 /* MyCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				06B5B5972BDCCC1300107E46 /* Cell */,
 				0667043C2BC2F2D30057071C /* View */,
 				066704382BBC16A20057071C /* Repository */,
 				066704222BBA43BB0057071C /* Model */,
@@ -932,6 +958,7 @@
 				066703F52BAC6F0E0057071C /* UIColor+Config.m in Sources */,
 				066704542BCD63A30057071C /* VideoController.m in Sources */,
 				0667042F2BBAC38B0057071C /* SuperBaseId.m in Sources */,
+				06B5B59E2BDCD34600107E46 /* BannerCell.m in Sources */,
 				066704632BCD652B0057071C /* RoomController.m in Sources */,
 				066704482BC438F20057071C /* SuperToast.m in Sources */,
 				066704292BBA44CC0057071C /* Meta.m in Sources */,
@@ -943,6 +970,7 @@
 				066704592BCD644A0057071C /* MeController.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				066703E92BAB17A10057071C /* R.m in Sources */,
+				06B5B59A2BDCCC4F00107E46 /* BaseTableViewCell.m in Sources */,
 				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
 				066704212BBA404D0057071C /* SuperHttpUtil.m in Sources */,
 				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
