@@ -315,6 +315,9 @@ PODS:
   - QMUIKit/QMUIResources (4.7.0)
   - QMUIKit/QMUIWeakObjectContainer (4.7.0)
   - R.objc (0.8.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
@@ -325,6 +328,7 @@ DEPENDENCIES:
   - MyLayout
   - QMUIKit
   - R.objc
+  - SDWebImage
   - YYCache
 
 SPEC REPOS:
@@ -336,6 +340,7 @@ SPEC REPOS:
     - MyLayout
     - QMUIKit
     - R.objc
+    - SDWebImage
     - YYCache
 
 SPEC CHECKSUMS:
@@ -346,8 +351,9 @@ SPEC CHECKSUMS:
   MyLayout: 39ee012bd780936c973bdc5d8ce0f84e3de489d7
   QMUIKit: 2fc09ba9a31a44a4081916ed4c41467bac798821
   R.objc: bd0a4ef693bc8f9daa4e658d99afe1e01d204e7d
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: c0faa9eaa9c102ca68277262e137fb20c99becd3
+PODFILE CHECKSUM: e7f768aea81c99b571efb78a6bd5b5ab561d872b
 
 COCOAPODS: 1.12.0

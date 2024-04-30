@@ -27,13 +27,17 @@ target 'MyCloudMusic' do
   #https://github.com/ibireme/YYCache
   pod 'YYCache'
   
-  #指示器
-  #https://github.com/jdg/MBProgressHUD
-  pod 'MBProgressHUD'
-
   #JSON解析
   #https://github.com/CoderMJLee/MJExtension
   pod 'MJExtension'
+  
+  #指示器
+  #https://github.com/jdg/MBProgressHUD
+  pod 'MBProgressHUD'
+  
+  #图片加载框架
+  #https://github.com/SDWebImage/SDWebImage
+  pod 'SDWebImage'
 
   target 'MyCloudMusicTests' do
     inherit! :search_paths
