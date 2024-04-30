@@ -8,6 +8,7 @@
 #import "DiscoveryController.h"
 #import "BannerData.h"
 #import "BannerCell.h"
+#import "BannerClickEvent.h"
 
 @interface DiscoveryController ()
 
@@ -31,6 +32,21 @@
     [super initDatum];
     
     [self loadData];
+}
+
+- (void)initListeners{
+    [super initListeners];
+    
+    @weakify(self);
+    //订阅banner点击事件
+    [QTSubMain(self, BannerClickEvent) next:^(BannerClickEvent *event) {
+        @strongify(self);
+        [self processAdClick:event.data];
+    }];
+}
+
+- (void)processAdClick:(Ad *)data{
+    NSLog(@"processAdClick %@",data.uri);
 }
 
 - (void)loadData:(BOOL)isPlaceholder{

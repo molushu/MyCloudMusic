@@ -50,6 +50,7 @@
 		06B5B59A2BDCCC4F00107E46 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B5B5992BDCCC4F00107E46 /* BaseTableViewCell.m */; };
 		06B5B59E2BDCD34600107E46 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B5B59D2BDCD34600107E46 /* BannerCell.m */; };
 		06B5B5A12BE0D61700107E46 /* ResourceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B5B5A02BE0D61700107E46 /* ResourceUtil.m */; };
+		06B5B5A52BE1343F00107E46 /* BannerClickEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B5B5A42BE1343F00107E46 /* BannerClickEvent.m */; };
 		06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87E882B6733FC00DC99F2 /* AppDelegate.m */; };
 		06B87E942B6733FE00DC99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E932B6733FE00DC99F2 /* Assets.xcassets */; };
 		06B87E972B6733FE00DC99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B87E952B6733FE00DC99F2 /* LaunchScreen.storyboard */; };
@@ -166,6 +167,8 @@
 		06B5B59D2BDCD34600107E46 /* BannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerCell.m; sourceTree = "<group>"; };
 		06B5B59F2BE0D61700107E46 /* ResourceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceUtil.h; sourceTree = "<group>"; };
 		06B5B5A02BE0D61700107E46 /* ResourceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResourceUtil.m; sourceTree = "<group>"; };
+		06B5B5A32BE1343F00107E46 /* BannerClickEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerClickEvent.h; sourceTree = "<group>"; };
+		06B5B5A42BE1343F00107E46 /* BannerClickEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerClickEvent.m; sourceTree = "<group>"; };
 		06B87E842B6733FC00DC99F2 /* MyCloudMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCloudMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87E872B6733FC00DC99F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06B87E882B6733FC00DC99F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -573,6 +576,7 @@
 		0667046E2BD163BD0057071C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06B5B5A22BE1341F00107E46 /* Event */,
 				0667046F2BD163D90057071C /* Ad.h */,
 				066704702BD163D90057071C /* Ad.m */,
 			);
@@ -604,6 +608,15 @@
 				06B5B59D2BDCD34600107E46 /* BannerCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		06B5B5A22BE1341F00107E46 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				06B5B5A32BE1343F00107E46 /* BannerClickEvent.h */,
+				06B5B5A42BE1343F00107E46 /* BannerClickEvent.m */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		06B87E7B2B6733FC00DC99F2 = {
@@ -956,6 +969,7 @@
 			files = (
 				066704442BC2FAD10057071C /* StringUtil.m in Sources */,
 				066704322BBAC4120057071C /* SuperCommon.m in Sources */,
+				06B5B5A52BE1343F00107E46 /* BannerClickEvent.m in Sources */,
 				066703D22BA7E4AD0057071C /* SplashController.m in Sources */,
 				0667044B2BC593EA0057071C /* TipUtil.m in Sources */,
 				0667040C2BB1C9680057071C /* ViewFactoryUtil.m in Sources */,

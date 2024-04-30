@@ -38,6 +38,10 @@ target 'MyCloudMusic' do
   #图片加载框架
   #https://github.com/SDWebImage/SDWebImage
   pod 'SDWebImage'
+  
+  #发布订阅框架
+  #https://github.com/LeoMobileDeveloper/QTEventBus
+  pod 'QTEventBus'
 
   target 'MyCloudMusicTests' do
     inherit! :search_paths

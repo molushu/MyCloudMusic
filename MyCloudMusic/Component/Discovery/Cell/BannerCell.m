@@ -10,6 +10,7 @@
 
 #import "BannerCell.h"
 #import "ResourceUtil.h"
+#import "BannerClickEvent.h"
 
 @implementation BannerCell
 
@@ -41,9 +42,6 @@
     _contentScrollView.myHeight = MyLayoutSize.fill;
     _contentScrollView.clipsToBounds = YES;
     _contentScrollView.layer.cornerRadius = 10;
-    
-    //禁用自动滚动
-    _contentScrollView.isAutoScroll=NO;
     
     //不改变透明度
     _contentScrollView.isChangeAlpha=NO;
@@ -105,6 +103,15 @@
     cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
 
     return cell;
+}
+
+/// 点击
+/// @param cycleScrollView <#cycleScrollView description#>
+/// @param index <#index description#>
+- (void)cycleScrollView:(GKCycleScrollView *)cycleScrollView didSelectCellAtIndex:(NSInteger)index{
+    BannerClickEvent *event = [[BannerClickEvent alloc] init];
+    event.data = self.datum[index];
+    [QTEventBus.shared dispatch:event];
 }
 
 @end
