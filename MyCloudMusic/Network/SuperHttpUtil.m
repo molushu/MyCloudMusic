@@ -96,7 +96,7 @@
             success(baseResponse,result);
         } else {
             //业务请求失败，例如：服务端返回密码错误
-            [self handlerResponse:baseResponse error:nil failure:failure task:task placeholder:nil];
+            [self handlerResponse:baseResponse error:nil failure:failure task:task placeholder:controller.placeholderView];
         }
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         //检查是否隐藏Loading
@@ -104,7 +104,7 @@
         
         //像网络错误，服务端返回401，400，500等都会都在这里
         NSLog(@"SuperHttpUtil failure %@",error);
-        [self handlerResponse:nil error:error failure:failure task:task placeholder:nil];
+        [self handlerResponse:nil error:error failure:failure task:task placeholder:controller.placeholderView];
     }];
 }
 
@@ -149,10 +149,10 @@
             //回调block
             success(baseResponse,meta,result);
         } else {
-            [self handlerResponse:baseResponse error:nil failure:failure task:task placeholder:nil];
+            [self handlerResponse:baseResponse error:nil failure:failure task:task placeholder:controller.placeholderView];
         }
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-        [self handlerResponse:nil error:error failure:failure task:task placeholder:nil];
+        [self handlerResponse:nil error:error failure:failure task:task placeholder:controller.placeholderView];
     }];
 }
 
@@ -174,7 +174,9 @@
 #pragma mark - 辅助方法
 
 +(void)preProcess:(BaseLogicController *)controller{
-
+    if (controller && controller.placeholderView) {
+        [controller.placeholderView hide];
+    }
 }
 
 +(BOOL)isSuccessWithResponse:(BaseResponse *)data{
@@ -230,6 +232,10 @@
 +(void)handleError:(NSError *)error task:(NSURLSessionDataTask *)task placeholder:(nullable PlaceholderView *)placeholder{
     NSString *errorMessage;
     switch (error.code) {
+        case NSURLErrorNotConnectedToInternet:
+            //没有网络连接，例如：关闭了网络
+            errorMessage = R.string.localizable.networkError;
+            break;
         case -1011://NSURLErrorBadServerResponse
             errorMessage = @"服务器响应异常";
             
@@ -241,7 +247,9 @@
             break;
     }
     
-    NSLog(@"SuperHttpUtil handleError %@", errorMessage);
+    if (errorMessage) {
+        [TipUtil showErrorWithToast:errorMessage placeholderView:placeholder placeholderTitle:[R.string.localizable clickReload:errorMessage]];
+    }
 }
 
 +(void)handleHttpError:(NSError *)error task:(NSURLSessionDataTask *)task placeholder:(nullable PlaceholderView *)placeholder{

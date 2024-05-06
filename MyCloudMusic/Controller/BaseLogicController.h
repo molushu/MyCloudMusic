@@ -8,6 +8,7 @@
 //提供类似Android中更高层级的布局框架
 #import <MyLayout/MyLayout.h>
 #import "BaseCommonController.h"
+#import "PlaceholderView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -33,6 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) MyBaseLayout *superFooterContainer;
 @property (nonatomic, strong) MyBaseLayout *superFooterContentContainer;
 
+/// 占位控件
+@property(nonatomic,strong) PlaceholderView *placeholderView;
+
 /// 初始化垂直方向LinearLayout容器
 - (void)initLinearLayout;
 
@@ -47,6 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 使用默认分割线
 - (void)initDefaultTableViewDivider;
+
+/// 初始化占位控件
+- (void)initPlaceholderView;
 
 #pragma mark - 加载数据
 

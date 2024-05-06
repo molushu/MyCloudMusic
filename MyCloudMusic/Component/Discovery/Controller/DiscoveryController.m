@@ -22,6 +22,9 @@
     //初始化TableView结构
     [self initTableViewSafeArea];
     
+    //初始化占位控件
+    [self initPlaceholderView];
+    
     //注册轮播图cell
     //也可以放到header中，这里之所以放到cell
     //是要实现列表的数据可以调整显示顺序
@@ -51,6 +54,7 @@
 
 - (void)loadData:(BOOL)isPlaceholder{
     [self.datum removeAllObjects];
+    [self.tableView reloadData];
     
     //广告API
     [[DefaultRepository shared] bannerAdWithController:self success:^(BaseResponse * _Nonnull baseResponse, Meta * _Nonnull meta, NSArray * _Nonnull data) {

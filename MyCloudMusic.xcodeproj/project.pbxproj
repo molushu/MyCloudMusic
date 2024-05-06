@@ -58,6 +58,7 @@
 		06B87EA42B6733FF00DC99F2 /* MyCloudMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EA32B6733FF00DC99F2 /* MyCloudMusicTests.m */; };
 		06B87EAE2B6733FF00DC99F2 /* MyCloudMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EAD2B6733FF00DC99F2 /* MyCloudMusicUITests.m */; };
 		06B87EB02B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EAF2B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m */; };
+		06F711722BE91BBB006A83F0 /* UIView+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F711712BE91BBB006A83F0 /* UIView+SuperUI.m */; };
 		72633165236A1A69E296D95D /* Pods_MyCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414DEFAD26962587D0F5D995 /* Pods_MyCloudMusicTests.framework */; };
 		7B3628B9885171913A0FC3F4 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52185501C691B4F60DEE3C8 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework */; };
 /* End PBXBuildFile section */
@@ -181,6 +182,8 @@
 		06B87EA92B6733FF00DC99F2 /* MyCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B87EAD2B6733FF00DC99F2 /* MyCloudMusicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCloudMusicUITests.m; sourceTree = "<group>"; };
 		06B87EAF2B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCloudMusicUITestsLaunchTests.m; sourceTree = "<group>"; };
+		06F711702BE91BBB006A83F0 /* UIView+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperUI.h"; sourceTree = "<group>"; };
+		06F711712BE91BBB006A83F0 /* UIView+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperUI.m"; sourceTree = "<group>"; };
 		37FA3A995BD880439AD90310 /* Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
 		414DEFAD26962587D0F5D995 /* Pods_MyCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A20818E9CA82BEACFEA1A4 /* Pods-MyCloudMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic.debug.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,7 +261,6 @@
 		066703D32BA884F30057071C /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				066704452BC438D20057071C /* Toast */,
 				066704402BC2FA990057071C /* SuperOC */,
 				0667041A2BB8158D0057071C /* MSNetwork */,
 				066703D42BA884FB0057071C /* SuperUI */,
@@ -269,6 +271,8 @@
 		066703D42BA884FB0057071C /* SuperUI */ = {
 			isa = PBXGroup;
 			children = (
+				06F7116F2BE91B8E006A83F0 /* View */,
+				066704452BC438D20057071C /* Toast */,
 				066704692BCD74E40057071C /* Image */,
 				066703EB2BABC7F90057071C /* Color */,
 				066703D52BA885060057071C /* Date */,
@@ -686,6 +690,15 @@
 			path = MyCloudMusicUITests;
 			sourceTree = "<group>";
 		};
+		06F7116F2BE91B8E006A83F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06F711702BE91BBB006A83F0 /* UIView+SuperUI.h */,
+				06F711712BE91BBB006A83F0 /* UIView+SuperUI.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3679F11DD2174A3309CEF3BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -995,6 +1008,7 @@
 				066704212BBA404D0057071C /* SuperHttpUtil.m in Sources */,
 				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
+				06F711722BE91BBB006A83F0 /* UIView+SuperUI.m in Sources */,
 				066704752BD165230057071C /* BannerData.m in Sources */,
 				066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */,
 				0667046C2BCD75100057071C /* UIImage+SuperUI.m in Sources */,

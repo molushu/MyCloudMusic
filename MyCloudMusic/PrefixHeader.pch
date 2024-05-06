@@ -26,6 +26,7 @@
 #import "SuperToast.h"
 #import "TipUtil.h"
 #import "ResourceUtil.h"
+#import "UIView+SuperUI.h"
 
 #pragma mark - weakify宏
 #ifndef weakify
