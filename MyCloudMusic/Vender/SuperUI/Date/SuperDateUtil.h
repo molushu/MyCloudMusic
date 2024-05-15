@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 当前年
 +(NSInteger)currentYear;
 
+/// 当前天
++(NSInteger)currentDay;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -59,6 +59,10 @@
 		06B87EAE2B6733FF00DC99F2 /* MyCloudMusicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EAD2B6733FF00DC99F2 /* MyCloudMusicUITests.m */; };
 		06B87EB02B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B87EAF2B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m */; };
 		06F711722BE91BBB006A83F0 /* UIView+SuperUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F711712BE91BBB006A83F0 /* UIView+SuperUI.m */; };
+		06F711752BEE6B10006A83F0 /* DiscoveryButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F711742BEE6B10006A83F0 /* DiscoveryButtonCell.m */; };
+		06F711782BF08AAD006A83F0 /* ButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F711772BF08AAD006A83F0 /* ButtonData.m */; };
+		06F7117B2BF08B74006A83F0 /* IconTitleButtonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7117A2BF08B74006A83F0 /* IconTitleButtonData.m */; };
+		06F7117F2BF5011D006A83F0 /* DiscoveryButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F7117E2BF5011D006A83F0 /* DiscoveryButtonView.m */; };
 		72633165236A1A69E296D95D /* Pods_MyCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414DEFAD26962587D0F5D995 /* Pods_MyCloudMusicTests.framework */; };
 		7B3628B9885171913A0FC3F4 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52185501C691B4F60DEE3C8 /* Pods_MyCloudMusic_MyCloudMusicUITests.framework */; };
 /* End PBXBuildFile section */
@@ -184,6 +188,14 @@
 		06B87EAF2B6733FF00DC99F2 /* MyCloudMusicUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCloudMusicUITestsLaunchTests.m; sourceTree = "<group>"; };
 		06F711702BE91BBB006A83F0 /* UIView+SuperUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperUI.h"; sourceTree = "<group>"; };
 		06F711712BE91BBB006A83F0 /* UIView+SuperUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperUI.m"; sourceTree = "<group>"; };
+		06F711732BEE6B10006A83F0 /* DiscoveryButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonCell.h; sourceTree = "<group>"; };
+		06F711742BEE6B10006A83F0 /* DiscoveryButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryButtonCell.m; sourceTree = "<group>"; };
+		06F711762BF08AAD006A83F0 /* ButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonData.h; sourceTree = "<group>"; };
+		06F711772BF08AAD006A83F0 /* ButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonData.m; sourceTree = "<group>"; };
+		06F711792BF08B74006A83F0 /* IconTitleButtonData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IconTitleButtonData.h; sourceTree = "<group>"; };
+		06F7117A2BF08B74006A83F0 /* IconTitleButtonData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IconTitleButtonData.m; sourceTree = "<group>"; };
+		06F7117D2BF5011D006A83F0 /* DiscoveryButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryButtonView.h; sourceTree = "<group>"; };
+		06F7117E2BF5011D006A83F0 /* DiscoveryButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryButtonView.m; sourceTree = "<group>"; };
 		37FA3A995BD880439AD90310 /* Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
 		414DEFAD26962587D0F5D995 /* Pods_MyCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A20818E9CA82BEACFEA1A4 /* Pods-MyCloudMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCloudMusic.debug.xcconfig"; path = "Target Support Files/Pods-MyCloudMusic/Pods-MyCloudMusic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -467,6 +479,7 @@
 		0667044C2BCD623D0057071C /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				06F7117C2BF500F0006A83F0 /* View */,
 				06B5B59B2BDCD30700107E46 /* Cell */,
 				066704722BD165050057071C /* Model */,
 				0667044D2BCD624D0057071C /* Controller */,
@@ -592,6 +605,10 @@
 			children = (
 				066704732BD165230057071C /* BannerData.h */,
 				066704742BD165230057071C /* BannerData.m */,
+				06F711762BF08AAD006A83F0 /* ButtonData.h */,
+				06F711772BF08AAD006A83F0 /* ButtonData.m */,
+				06F711792BF08B74006A83F0 /* IconTitleButtonData.h */,
+				06F7117A2BF08B74006A83F0 /* IconTitleButtonData.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -610,6 +627,8 @@
 			children = (
 				06B5B59C2BDCD34600107E46 /* BannerCell.h */,
 				06B5B59D2BDCD34600107E46 /* BannerCell.m */,
+				06F711732BEE6B10006A83F0 /* DiscoveryButtonCell.h */,
+				06F711742BEE6B10006A83F0 /* DiscoveryButtonCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -695,6 +714,15 @@
 			children = (
 				06F711702BE91BBB006A83F0 /* UIView+SuperUI.h */,
 				06F711712BE91BBB006A83F0 /* UIView+SuperUI.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		06F7117C2BF500F0006A83F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06F7117D2BF5011D006A83F0 /* DiscoveryButtonView.h */,
+				06F7117E2BF5011D006A83F0 /* DiscoveryButtonView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1003,12 +1031,15 @@
 				066704592BCD644A0057071C /* MeController.m in Sources */,
 				066703D82BA885270057071C /* SuperDateUtil.m in Sources */,
 				066703E92BAB17A10057071C /* R.m in Sources */,
+				06F711782BF08AAD006A83F0 /* ButtonData.m in Sources */,
 				06B5B59A2BDCCC4F00107E46 /* BaseTableViewCell.m in Sources */,
 				066704022BAFD4C80057071C /* BaseCommonController.m in Sources */,
+				06F7117B2BF08B74006A83F0 /* IconTitleButtonData.m in Sources */,
 				066704212BBA404D0057071C /* SuperHttpUtil.m in Sources */,
 				066704082BB1B54E0057071C /* TermServiceDialogController.m in Sources */,
 				066703F12BAC66480057071C /* UIColor+Hex.m in Sources */,
 				06F711722BE91BBB006A83F0 /* UIView+SuperUI.m in Sources */,
+				06F7117F2BF5011D006A83F0 /* DiscoveryButtonView.m in Sources */,
 				066704752BD165230057071C /* BannerData.m in Sources */,
 				066704102BB3E5730057071C /* DefaultPreferenceUtil.m in Sources */,
 				0667046C2BCD75100057071C /* UIImage+SuperUI.m in Sources */,
@@ -1023,6 +1054,7 @@
 				066703F82BAC84EA0057071C /* UIColor+Theme.m in Sources */,
 				06B87E892B6733FC00DC99F2 /* AppDelegate.m in Sources */,
 				066704162BB4FE900057071C /* GuideController.m in Sources */,
+				06F711752BEE6B10006A83F0 /* DiscoveryButtonCell.m in Sources */,
 				06B87E9A2B6733FE00DC99F2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

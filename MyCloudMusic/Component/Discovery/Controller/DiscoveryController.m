@@ -9,6 +9,8 @@
 #import "BannerData.h"
 #import "BannerCell.h"
 #import "BannerClickEvent.h"
+#import "DiscoveryButtonCell.h"
+#import "ButtonData.h"
 
 @interface DiscoveryController ()
 
@@ -29,6 +31,8 @@
     //也可以放到header中，这里之所以放到cell
     //是要实现列表的数据可以调整显示顺序
     [self.tableView registerClass:[BannerCell class] forCellReuseIdentifier:BannerCellName];
+    
+    [self.tableView registerClass:[DiscoveryButtonCell class] forCellReuseIdentifier:DiscoveryButtonCellName];
 }
 
 - (void)initDatum{
@@ -63,6 +67,9 @@
         bannerData.data = data;
         [self.datum addObject:bannerData];
         
+        // 添加快捷按钮
+        [self.datum addObject:[ButtonData new]];
+        
         [self.tableView reloadData];
     }];
 }
@@ -76,13 +83,58 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSObject *data= self.datum[indexPath.row];
     
-    //轮播图
-    BannerCell *cell = [tableView dequeueReusableCellWithIdentifier:BannerCellName forIndexPath:indexPath];
+    //获取类型
+    ListStyle style=[self typeForItemAtIndexPath:indexPath];
     
-    //绑定数据
-    [cell bind:data];
+    switch (style) {
+        case StyleBanner: {
+            //轮播图
+            BannerCell *cell = [tableView dequeueReusableCellWithIdentifier:BannerCellName forIndexPath:indexPath];
+            //绑定数据
+            [cell bind:data];
+            
+            return cell;
+        }
+            
+        case StyleButton:{
+            //按钮
+            DiscoveryButtonCell *cell = [tableView dequeueReusableCellWithIdentifier:DiscoveryButtonCellName forIndexPath:indexPath];
+            
+            [cell bind:data];
+            
+            return cell;
+        }
+            
+        default:
+            return nil;;
+    }
+}
+
+/// Cell类型
+/// @param indexPath <#indexPath description#>
+- (ListStyle)typeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSObject *data= self.datum[indexPath.row];
     
-    return cell;
+    if([data isKindOfClass:[BannerData class]]){
+        //banner
+        return StyleBanner;
+    }else if ([data isKindOfClass:[ButtonData class]]){
+        //按钮
+        return StyleButton;
+    }
+    //    else if ([data isKindOfClass:[SheetData class]]){
+    //        //歌单
+    //        return StyleSheet;
+    //    }
+    //    else if ([data isKindOfClass:[SongData class]]){
+    //        //单曲
+    //        return StyleSong;
+    //    }
+    //
+    //TODO 更多的类型，在这里扩展就行了
+    
+    //尾部类型
+    return StyleFooter;
 }
 
 @end
